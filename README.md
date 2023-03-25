@@ -1,26 +1,21 @@
-# Portfolio
-Personal Portfolio Website
+# Personal Portfolio Website
 
-# About
+This is my personal portfolio website showcasing my education, projects, work, and learning path. The website is built using HTML5, CSS3, JavaScript, and jQuery. The following sections provide an overview of the website's development process.
 
-Personal professional portfolio website includes overview of my education, word, learning path. 
+## Development Process
 
-## Built with
+- Developed a professional-quality web portfolio.
+- Built HTML structure.
+- Added CSS style.
+- Added Responsive interactivity.
+- Added JavaScript Interactivity.
+- Validated on w3 Validator.
+- Design inspiration from "Bedimcode design" - special thanks to him/her.
 
-* HTML5
-* CSS3
-* JavaScript
-* jQuery
+## Built With
 
-### Notes
-
-* Developed a professional-quality web portfolio.
-* Built HTML structure.
-* Added CSS style.
-* Added Responsive interactivity
-* Added JavaScript Interactivity.
-* Valdited On w3 Validator.
-* Amzazing Design idea from "Bedimcode design" special thanks to him/her
-
-
+- HTML5
+- CSS3
+- JavaScript
+- jQuery
 
