@@ -4,6 +4,27 @@
 
 @layer base {
   :root {
+    /* Light theme colors */
+    --text-primary-light: #000000;
+    --text-secondary-light: #333333;
+    --text-accent-light: #555555;
+    --heading-font-size-light: 2rem;
+    --body-font-size-light: 1rem;
+
+    /* Dark theme colors */
+    --text-primary-dark: #ffffff;
+    --text-secondary-dark: #cccccc;
+    --text-accent-dark: #aaaaaa;
+    --heading-font-size-dark: 2rem;
+    --body-font-size-dark: 1rem;
+
+    /* Existing variables */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --spotlight-color-1-light: #FF0000;
+    --spotlight-color-2-light: #00FF00;
+    --spotlight-color-3-light: #0000FF;
+
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
 
@@ -38,31 +59,31 @@
   .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
+    --text-primary: var(--text-primary-dark);
+    --text-secondary: var(--text-secondary-dark);
+    --text-accent: var(--text-accent-dark);
+    --heading-font-size: var(--heading-font-size-dark);
+    --body-font-size: var(--body-font-size-dark);
+    
+    /* Existing dark theme variables */
+    --spotlight-color-1: var(--spotlight-color-1-dark);
+    --spotlight-color-2: var(--spotlight-color-2-dark);
+    --spotlight-color-3: var(--spotlight-color-3-dark);
+  }
 
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --text-primary: var(--text-primary-light);
+    --text-secondary: var(--text-secondary-light);
+    --text-accent: var(--text-accent-light);
+    --heading-font-size: var(--heading-font-size-light);
+    --body-font-size: var(--body-font-size-light);
 
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
+    /* Existing light theme variables */
+    --spotlight-color-1: var(--spotlight-color-1-light);
+    --spotlight-color-2: var(--spotlight-color-2-light);
+    --spotlight-color-3: var(--spotlight-color-3-light);
   }
 }
 
@@ -71,7 +92,7 @@
     @apply border-border !scroll-smooth;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-[var(--text-primary)];
   }
   button {
     @apply active:outline-none;
@@ -80,7 +101,23 @@
 
 @layer utilities {
   .heading {
-    @apply font-bold text-4xl md:text-5xl text-center;
+    font-size: var(--heading-font-size);
+  }
+
+  .body-text {
+    font-size: var(--body-font-size);
+  }
+
+  .text-primary {
+    color: var(--text-primary);
+  }
+
+  .text-secondary {
+    color: var(--text-secondary);
+  }
+
+  .text-accent {
+    color: var(--text-accent);
   }
 
   .black-gradient {
