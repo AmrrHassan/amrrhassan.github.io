@@ -7,7 +7,7 @@ import RecentProjects  from "@/components/RecentProjects";
 
 export default function Home() {
   return (
-    <main className="relative dark:bg-black-100 light:bg[#f0f0f0] flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <main id="about" className="relative dark:bg-black-100 light:bg[#f0f0f0] flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
         <FloatingNav
           navItems={navItems}

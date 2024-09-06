@@ -408,33 +408,48 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Web Developer - IZZY",
+    desc: "Develop and oversee infrastructure, security, and development of the company’s website and application. Flutter app using Clean Architecture principles, unit testing, and integrating Bloc pattern for state management.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
+    // dates: "Feb 2021 - present",
+    // location: "Alexandria, Egypt",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Web Developer - Ceema Films UAE",
+    desc: "Develop and oversee the company’s web and mobile applications.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
+    // dates: "Jan 2021 - present",
+    // location: "UAE",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
+    title: "Web Developer - PrintSprint / Upwork / Mostaql",
+    desc: "Develop and modify applications using different tech stacks according to client needs. Successfully completed over 50+ projects with a 100% client satisfaction rate.",
+    className: "md:col-span-2",
+    // thumbnail: "/exp3.svg",
+    // dates: "Remote",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Web Developer - Internship - Enozom Software",
+    desc: "Collaborated with a team of developers on a project using ReactJS for frontend and NodeJS for backend. Received mentorship and guidance from experienced developers, enhancing technical skills.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
+    // dates: "July 2023 - August 2023",
+    // location: "Alexandria, Egypt",
+  },
+  {
+    id: 5,
+    title: "Front-End Developer - Innova STEM EDU",
+    desc: "Enhanced website functionality through developing, modifying, and debugging features.",
+    className: "md:col-span-2",
+    thumbnail: "/exp5.svg",
   },
 ];
+
 
 export const socialMedia = [
   {
@@ -443,10 +458,6 @@ export const socialMedia = [
   },
   {
     id: 2,
-    img: "svg/twit.svg",
-  },
-  {
-    id: 3,
     img: "svg/link.svg",
   },
 ];

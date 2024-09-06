@@ -24,10 +24,14 @@ const RecentProjects = () => {
       setVisibleProjects(6);
       setIsAnimating(false);
     }, 400);
+    const element = document.getElementById("projects");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
-    <div className="py-20 mt-20 mb-20" id="projects">
+    <div className="py-20 mt-10 mb-10" id="projects">
       <h1 className="heading font-bold justify-center text-center">
         A small selection of
         <span className="text-purple"> recent projects</span>
@@ -37,7 +41,7 @@ const RecentProjects = () => {
           .slice(0, visibleProjects)
           .map(({ id, title, des, img, iconLists, link }, index) => (
             <div
-              className={`lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw] transition-opacity duration-500 ease-in-out transform ${
+              className={`sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw] transition-opacity duration-500 ease-in-out transform ${
                 isAnimating
                   ? "opacity-0 translate-y-4"
                   : "opacity-100 translate-y-0"
@@ -48,7 +52,7 @@ const RecentProjects = () => {
               }}
             >
               <PinContainer title={link} href={link}>
-                <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[15vh] lg:h-[25vh] mb-10">
+                <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden h-[30vh] lg:h-[30vh] sm-h[40vh] mb-10">
                   {/* <div
                     className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                     style={{ backgroundColor: "#13162D" }}
