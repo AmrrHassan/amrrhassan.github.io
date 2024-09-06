@@ -7,36 +7,6 @@ export const navItems = [
 
 export const gridItems = [
   {
-    id: 1,
-    title: "Effective Client Collaboration and Communication",
-    description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
-    img: "images/laptop2.jpg",
-    spareImg: "",
-  },
-  {
-    id: 2,
-    title: "Flexible with Time Zone Coordination",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 3,
-    title: "My Tech Stack",
-    description: "Technical skills and expertise.",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-center",
-    img: "",
-    spareImg: "",
-  },
-  {
     id: 4,
     title: "Enthusiastic About Technology and Development",
     description: "",
@@ -67,21 +37,57 @@ export const gridItems = [
     spareImg: "",
   },
 ];
-export const projects = [
+
+
+
+export const gridItemsTwo = [
+  {
+    id: 1,
+    title: "Effective Client Collaboration and Communication",
+    description: "",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[50vh]",
+    imgClassName: "w-full h-full",
+    titleClassName: "justify-end",
+    img: "images/laptop2.jpg",
+    spareImg: "",
+  },
   {
     id: 2,
-    title: "IZZY Sportswear",
-    des: "An e-commerce platform for sportswear, offering a wide range of fitness apparel.",
-    img: "images/project/IZZY.png",
-    iconLists: ["svg/ecomm.svg", "svg/fitness.svg"],
-    link: "https://izzyapparel.com",
+    title: "Flexible with Time Zone Coordination",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "",
+    spareImg: "",
   },
+  {
+    id: 3,
+    title: "My Tech Stack",
+    description: "Technical skills and expertise.",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    imgClassName: "",
+    titleClassName: "justify-center",
+    img: "",
+    spareImg: "",
+  },
+];
+
+export const projects = [
+  {
+    id: 41,
+    title: "ZZ Training App",
+    des: "A comprehensive fitness training app designed for trainers and users, featuring personalized workout plans, progress tracking, and interactive training sessions.",
+    img: "images/project/izzyapp.png",
+    iconLists: ["svg/Flutter.svg", "svg/firebase.svg", "svg/Dart.svg", "svg/Sqlite.svg", "svg/Socketio.svg"],
+    link: "https://izzyapparel.com",
+  },  
   {
     id: 4,
     title: "AlaFein App",
     des: "A mobile app for cultural events, offering event discovery and ticket booking services.",
     img: "images/project/Alafein.png",
-    iconLists: ["svg/app.svg", "svg/events.svg"],
+    iconLists: ["svg/Flutter.svg", "svg/firebase.svg", "svg/Angular.svg", "svg/Swift.svg", "svg/Kotlin.svg"],
     link: "https://apps.apple.com/eg/app/alafein/id1611144819",
   },
   {
@@ -89,7 +95,7 @@ export const projects = [
     title: "Majarrah Mall",
     des: "A mall in Egypt offering a wide range of retail and entertainment experiences.",
     img: "images/project/Majarrah.png",
-    iconLists: ["svg/retail.svg", "svg/entertainment.svg"],
+    iconLists: ["svg/React.svg", "svg/Next.svg", "svg/TypeScript.svg", "svg/Tailwind.svg", "svg/Vitejs.svg", "svg/Nodejs.svg", "svg/MongoDB.svg"],
     link: "https://majarrah.com",
   },
   {
@@ -97,7 +103,7 @@ export const projects = [
     title: "Vivian Moawad",
     des: "An haute couture company offering bespoke fashion designs and collections.",
     img: "images/project/Vivian.png",
-    iconLists: ["svg/fashion.svg", "svg/couture.svg"],
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg", "svg/host.svg"],
     link: "https://vivianmoawad.com",
   },
   {
@@ -105,7 +111,7 @@ export const projects = [
     title: "Feelgood Socials",
     des: "A social platform for organizing and booking events, parties, and social gatherings.",
     img: "images/project/Feelgood Socials.png",
-    iconLists: ["svg/social.svg", "svg/events.svg"],
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/React.svg", "svg/PHP.svg", "svg/host.svg"],
     link: "https://feelgoodsocials.com",
   },
   {
@@ -113,23 +119,23 @@ export const projects = [
     title: "Innova STEM Education",
     des: "A learning management system offering online courses and training programs.",
     img: "images/project/Innova.png",
-    iconLists: ["svg/education.svg", "svg/online.svg"],
+    iconLists: ["svg/React.svg", "svg/Next.svg", "svg/TypeScript.svg", "svg/Tailwind.svg", "svg/Webpack.svg", "svg/Nodejs.svg", "svg/MongoDB.svg"],
     link: "http://innovastem-edu.com",
   },
   {
-    id: 41,
-    title: "ZZ Training App",
-    des: "A comprehensive fitness training app designed for trainers and users, featuring personalized workout plans, progress tracking, and interactive training sessions.",
-    img: "images/project/izzyapp.png",
-    iconLists: ["svg/fitness.svg", "svg/training.svg"],
+    id: 2,
+    title: "IZZY Sportswear",
+    des: "An e-commerce platform for sportswear, offering a wide range of fitness apparel.",
+    img: "images/project/IZZY.png",
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg", "svg/Javascript.svg"],
     link: "https://izzyapparel.com",
-  },  
+  },
   {
     id: 14,
     title: "Jellies",
     des: "An e-commerce platform for jelly-based snacks and confectioneries.",
     img: "images/project/Jellies.png",
-    iconLists: ["svg/ecomm.svg", "svg/food.svg"],
+    iconLists: ["svg/Ruby.svg", "svg/Javascript.svg"],
     link: "https://jellieseg.com",
   },
   {
@@ -137,7 +143,7 @@ export const projects = [
     title: "Wedding Invitations Website",
     des: "Custom Wedding Invitation with 3D interactions.",
     img: "images/project/Wedding.png",
-    iconLists: ["svg/wedding.svg", "svg/design.svg"],
+    iconLists: ["svg/Three.svg", "svg/Webpack.svg", "svg/React.svg", "svg/TypeScript.svg"],
     link: "#",
   },
   {
@@ -145,8 +151,8 @@ export const projects = [
     title: "Iris Aromatherapy",
     des: "An e-commerce platform for aromatherapy products, promoting relaxation and wellness.",
     img: "images/project/Iris.png",
-    iconLists: ["svg/ecomm.svg", "svg/aroma.svg"],
-    link: "http://irisaromatherapy.com",
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg", "svg/host.svg"],
+    link: "https://irisaromatherapy.com",
   },
 
   {
@@ -154,7 +160,7 @@ export const projects = [
     title: "AlexMark",
     des: "A plastic manufacturing company specializing in high-quality plastic products.",
     img: "images/project/AlexMark.png",
-    iconLists: ["svg/manufacturing.svg", "svg/plastic.svg"],
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg", "svg/host.svg"],
     link: "https://www.alexmarkalex.com/",
   },
   {
@@ -162,7 +168,7 @@ export const projects = [
     title: "AK Ships",
     des: "An import-export company providing global shipping and logistics services.",
     img: "images/project/AK Ships.png",
-    iconLists: ["svg/shipping.svg", "svg/global.svg"],
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg"],
     link: "https://ak-ships.com",
   },
 
@@ -171,7 +177,7 @@ export const projects = [
     title: "Jollydar",
     des: "An e-commerce platform for high-end furniture, offering modern and luxurious designs.",
     img: "images/project/Jollydar.png",
-    iconLists: ["svg/ecomm.svg", "svg/furniture.svg"],
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg"],
     link: "https://jollydar.com",
   },
   {
@@ -179,7 +185,7 @@ export const projects = [
     title: "Alkhalaf Contracting",
     des: "A contracting company in Saudi Arabia, offering infrastructure and building solutions.",
     img: "images/project/Alkhalaf.png",
-    iconLists: ["svg/construction.svg", "svg/saudi.svg"],
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg"],
     link: "https://alkhalafcontr.com",
   },
   {
@@ -187,7 +193,7 @@ export const projects = [
     title: "Tenniscape",
     des: "A tennis and squash booking platform, offering court reservations and event management.",
     img: "images/project/Tenniscape.png",
-    iconLists: ["svg/sports.svg", "svg/booking.svg"],
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg"],
     link: "https://tenniscape.com",
   },
   {
@@ -203,7 +209,7 @@ export const projects = [
     title: "Capella",
     des: "An e-commerce platform offering a wide range of consumer products.",
     img: "images/project/Capella.png",
-    iconLists: ["svg/ecomm.svg", "svg/retail.svg"],
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg", "svg/host.svg"],
     link: "https://capella-egypt.com",
   },
   {
@@ -211,7 +217,7 @@ export const projects = [
     title: "Spire Pharma",
     des: "A pharmaceuticals e-commerce platform offering a wide range of health products.",
     img: "images/project/SpirePharma.png",
-    iconLists: ["svg/health.svg", "svg/pharma.svg"],
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg"],
     link: "https://spirepharma.com",
   },
   {
@@ -219,7 +225,7 @@ export const projects = [
     title: "Fruitalita",
     des: "An import-export company specializing in fresh fruits and produce.",
     img: "images/project/Fruitalita.png",
-    iconLists: ["svg/shipping.svg", "svg/produce.svg"],
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg", "svg/host.svg"],
     link: "https://fruitalita.com",
   },
   {
@@ -227,7 +233,7 @@ export const projects = [
     title: "Senno Factory",
     des: "A manufacturing company specializing in high-tech equipment and industrial solutions.",
     img: "images/project/Senno.png",
-    iconLists: ["svg/tech.svg", "svg/manufacturing.svg"],
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg", "svg/host.svg"],
     link: "https://sennoelite.com",
   },
   {
@@ -235,7 +241,7 @@ export const projects = [
     title: "KIKS",
     des: "An e-commerce platform for fashion and lifestyle products.",
     img: "images/project/KIKS.png",
-    iconLists: ["svg/ecomm.svg", "svg/fashion.svg"],
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg", "svg/host.svg"],
     link: "https://kikseg.com",
   },
   {
@@ -243,7 +249,7 @@ export const projects = [
     title: "Norway Freight",
     des: "An import-export company specializing in goods from Norway to the global market.",
     img: "images/project/Norway.png",
-    iconLists: ["svg/shipping.svg", "svg/global.svg"],
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg", "svg/host.svg"],
     link: "https://norwayfreight.net",
   },
   {
@@ -251,7 +257,7 @@ export const projects = [
     title: "Jeem Gym App",
     des: "A gym in Saudi Arabia with a mobile app for membership management and class bookings.",
     img: "images/project/JeemGymApp.png",
-    iconLists: ["svg/gym.svg", "svg/app.svg"],
+    iconLists: ["svg/Swift.svg", "svg/Kotlin.svg", "svg/MySQL.svg"],
     link: "https://gym.sa",
   },
 {
@@ -259,7 +265,7 @@ export const projects = [
     title: "Jeem Gym",
     des: "A gym in Saudi Arabia with a mobile app for membership management and class bookings.",
     img: "images/project/JeemGym.png",
-    iconLists: ["svg/gym.svg", "svg/app.svg"],
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg"],
     link: "https://jeemgym.com",
   },
   {
@@ -267,23 +273,15 @@ export const projects = [
     title: "Piranha",
     des: "An e-commerce platform offering swimwear and related accessories for swimmers.",
     img: "images/project/Piranha.png",
-    iconLists: ["svg/ecomm.svg", "svg/swimwear.svg"],
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg"],
     link: "https://piranha-swimming.com",
-  },
-  {
-    id: 22,
-    title: "Fair & Square",
-    des: "An e-commerce platform offering high-quality home products at competitive prices.",
-    img: "images/project/Fair&Square.png",
-    iconLists: ["svg/ecomm.svg", "svg/home.svg"],
-    link: "https://fairandsquare.shop",
   },
   {
     id: 26,
     title: "Miemar Real Estate",
     des: "A real estate company in Saudi Arabia offering property management and sales services.",
     img: "images/project/Miemar.png",
-    iconLists: ["svg/realestate.svg", "svg/saudi.svg"],
+    iconLists: ["svg/Webpack.svg", "svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg"],
     link: "https://miemar.com.sa",
   },
 
@@ -292,7 +290,7 @@ export const projects = [
     title: "Pulse ICT",
     des: "A software company based in Saudi Arabia, offering a range of IT services and solutions.",
     img: "images/project/PulseICT.png",
-    iconLists: ["svg/it.svg", "svg/saudi.svg"],
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg"],
     link: "#",
   },
 
@@ -301,7 +299,7 @@ export const projects = [
     title: "Qatar Legal Services",
     des: "Qatar Legal Services, offering online legal consulting and document processing services.",
     img: "images/project/QLS.png",
-    iconLists: ["svg/legal.svg", "svg/qatar.svg"],
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg"],
     link: "#",
   },
   {
@@ -309,7 +307,7 @@ export const projects = [
     title: "Premium Exports",
     des: "A leading import-export company specializing in premium goods across multiple industries.",
     img: "images/project/PremiumExports.png",
-    iconLists: ["svg/shipping.svg", "svg/commerce.svg"],
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg"],
     link: "#",
   },
   
@@ -318,7 +316,7 @@ export const projects = [
     title: "Efficiencies KSA",
     des: "A business services company in Saudi Arabia, providing consulting and operational solutions.",
     img: "images/project/Efficiencies.png",
-    iconLists: ["svg/business.svg", "svg/consulting.svg"],
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg", "svg/host.svg"],
     link: "#",
   },
 
@@ -327,7 +325,7 @@ export const projects = [
     title: "The Factory",
     des: "A bakery company offering a wide range of fresh baked goods through their e-commerce platform.",
     img: "images/project/The Factory.png",
-    iconLists: ["svg/bakery.svg", "svg/ecomm.svg"],
+    iconLists: ["svg/WordPress.svg", "svg/MySQL.svg", "svg/Apache.svg", "svg/Materialui.svg", "svg/PHP.svg"],
     link: "#",
   },
 
@@ -336,7 +334,7 @@ export const projects = [
     title: "Honeyland KSA",
     des: "An e-commerce platform offering a range of honey products from Saudi Arabia.",
     img: "images/project/Honeylandsa.png",
-    iconLists: ["svg/honey.svg", "svg/ecomm.svg"],
+    iconLists: ["svg/React.svg", "svg/Next.svg", "svg/TypeScript.svg", "svg/Tailwind.svg", "svg/Webpack.svg", "svg/Nodejs.svg", "svg/MongoDB.svg"],
     link: "#",
   },
 ];
