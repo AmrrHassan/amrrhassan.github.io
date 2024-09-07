@@ -1,6 +1,15 @@
 import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+// const nextConfig = {};
+
+const nextConfig = {
+    basePath: "/",
+    output: "export",
+    reactStrictMode: true,
+  };
+  
+  module.exports = nextConfig;
+  
 
 export default withSentryConfig(nextConfig, {
 // For all available options, see:
