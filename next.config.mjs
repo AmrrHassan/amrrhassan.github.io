@@ -6,9 +6,8 @@ const nextConfig = {
     reactStrictMode: true,
     output: 'export', 
     distDir: 'out',
-  };
-  
-  module.exports = nextConfig;
+};
+
 
 export default withSentryConfig(nextConfig, {
 // For all available options, see:
