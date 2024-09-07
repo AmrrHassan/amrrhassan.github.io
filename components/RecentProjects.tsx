@@ -33,10 +33,10 @@ const RecentProjects = () => {
   return (
     <div className="py-20 mt-10 mb-10" id="projects">
       <h1 className="heading font-bold justify-center text-center">
-        A small selection of
+        A selection of
         <span className="text-purple"> recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-x-16 mt-10">
         {projects
           .slice(0, visibleProjects)
           .map(({ id, title, des, img, iconLists, link }, index) => (

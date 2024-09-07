@@ -79,7 +79,7 @@ export const projects = [
     title: "ZZ Training App",
     des: "A comprehensive fitness training app designed for trainers and users, featuring personalized workout plans, progress tracking, and interactive training sessions.",
     img: "images/project/izzyapp.png",
-    iconLists: ["svg/Flutter.svg", "svg/firebase.svg", "svg/Dart.svg", "svg/Sqlite.svg", "svg/Socketio.svg"],
+    iconLists: ["svg/Flutter.svg", "svg/firebase.svg", "svg/Dart.svg", "svg/Sqlite.svg"],
     link: "https://izzyapparel.com",
   },  
   {
@@ -375,34 +375,41 @@ export const testimonials = [
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "IZZY Apparel",
+    img: "images/izzy.png",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    name: "Vivian Moawad",
+    img: "images/vivian.png",
   },
   {
     id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
+    name: "Majarrah.",
+    img: "images/majarrah.png",
   },
   {
     id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
+    name: "Jellies",
+    img: "images/jellies.png",
+
   },
   {
     id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    name: "CeemaFilms UAE",
+    img: "images/ceema.png",
   },
+  {
+    id: 6,
+    name: "Feelgood Socials.",
+    img: "images/feelgood.png",
+  },
+  // {
+  //   id: 6,
+  //   name: "HOSTINGER",
+  //   img: "svg/host.svg",
+  //   nameImg: "svg/hostName.svg",
+  // },
 ];
 
 export const workExperience = [

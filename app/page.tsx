@@ -4,6 +4,7 @@ import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems, gridItems, gridItemsTwo } from "@/data";
 import { FaHome } from "react-icons/fa";
 import RecentProjects  from "@/components/RecentProjects";
+import Clients  from "@/components/Clients";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Hero />
         <Grid gridItems={gridItems} />
         <RecentProjects />
+        <Clients /> 
         <Grid gridItems={gridItemsTwo} />
       </div>
     </main>
