@@ -3,13 +3,12 @@ import {withSentryConfig} from '@sentry/nextjs';
 // const nextConfig = {};
 
 const nextConfig = {
-    basePath: "/",
-    output: "export",
     reactStrictMode: true,
+    output: 'export', 
+    distDir: 'out',
   };
   
   module.exports = nextConfig;
-  
 
 export default withSentryConfig(nextConfig, {
 // For all available options, see:
