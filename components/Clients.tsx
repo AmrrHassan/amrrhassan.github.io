@@ -18,8 +18,6 @@ const Clients = () => {
             <img className="md:w-24 w-20 transition duration-300 ease-in-out hover:scale-110" src={img} alt={name} />
 
             {/* <img className="md:w-24 w-20" src={img} alt={name} /> */}
-
-
             {/* {nameImg ? (
               <img className="md:w-24 w-20" src={nameImg} alt={name} />
             ) : (
