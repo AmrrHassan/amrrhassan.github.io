@@ -5,6 +5,7 @@ import { navItems, gridItems, gridItemsTwo } from "@/data";
 import { FaHome } from "react-icons/fa";
 import RecentProjects  from "@/components/RecentProjects";
 import Clients  from "@/components/Clients";
+import Approach  from "@/components/Approach";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <RecentProjects />
         <Clients /> 
         <Grid gridItems={gridItemsTwo} />
+        <Approach />
       </div>
     </main>
   );
