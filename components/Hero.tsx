@@ -35,7 +35,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 mt-2 text-sm md:text-lg lg:text-2xl">
-            Hey, I&apos;m Amr a Full-Stack Developer.
+            Hey, I&apos;m Amr a Full-Stack Engineer.
           </p>
 
           <a href="#about">

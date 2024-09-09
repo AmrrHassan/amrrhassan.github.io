@@ -9,7 +9,7 @@ const Approach = () => {
     <>
       <section className="w-full py-20 ">
         <h1 className="heading font-bold justify-center text-center">
-          My <span className="text-purple"> Approach</span>
+          My Development<span className="text-purple"> Approach</span>
         </h1>
         <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto px-8">
           <Card
@@ -36,6 +36,7 @@ const Approach = () => {
               ]}
               dotSize={2}
             />
+
             {/* Radial gradient for the cute fade */}
             <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
           </Card>

@@ -6,6 +6,7 @@ import { FaHome } from "react-icons/fa";
 import RecentProjects  from "@/components/RecentProjects";
 import Clients  from "@/components/Clients";
 import Approach  from "@/components/Approach";
+import Contact  from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Clients /> 
         <Grid gridItems={gridItemsTwo} />
         <Approach />
+        <Contact />
       </div>
     </main>
   );

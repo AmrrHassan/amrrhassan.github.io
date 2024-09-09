@@ -21,9 +21,9 @@
     /* Existing variables */
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
-    --spotlight-color-1-light: #FF0000;
-    --spotlight-color-2-light: #00FF00;
-    --spotlight-color-3-light: #0000FF;
+    --spotlight-color-1-light: #ff0000;
+    --spotlight-color-2-light: #00ff00;
+    --spotlight-color-3-light: #0000ff;
 
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
@@ -64,7 +64,7 @@
     --text-accent: var(--text-accent-dark);
     --heading-font-size: var(--heading-font-size-dark);
     --body-font-size: var(--body-font-size-dark);
-    
+
     /* Existing dark theme variables */
     --spotlight-color-1: var(--spotlight-color-1-dark);
     --spotlight-color-2: var(--spotlight-color-2-dark);
@@ -122,5 +122,9 @@
 
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
+  }
+
+  .field-input {
+    @apply w-full bg-black-300 px-5 py-2 min-h-14 rounded-lg placeholder:opacity-50 text-lg text-white-200 shadow-black-200 shadow-2xl focus:outline-none;
   }
 }
