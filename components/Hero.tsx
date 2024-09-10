@@ -1,53 +1,33 @@
+import React from "react";
+import { BackgroundLines } from "@/components/ui/BackgroundLines";
 import { MagicButton } from "./ui/MagicButton";
-import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { FaLocationArrow } from "react-icons/fa";
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
-      <div>
-        <Spotlight
-          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
-          fill="red"
+    <BackgroundLines className="flex items-center justify-center w-full flex-col px-4">
+      <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
+        Amr Hassan Hafez<br />
+        <TextGenerateEffect
+          className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans relative z-20 font-bold tracking-tight"
+          words="Pixel-Perfect Solutions"
         />
-        <Spotlight
-          className="-top-10 -left-full h-[80vh] w-[50vw]"
-          fill="blue"
+      </h2>
+      <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-center">
+        As a full stack engineer, I specialize in creating end-to-end solutions,
+        from conceptualization to deployment.{<br />} In this portfolio,
+        I&apos;ll be showcasing my most prized projects, sharing my experiences
+        and insights.
+      </p>
+      <a href="#about" className="py-10">
+        <MagicButton
+          title="Check my Work"
+          icon={<FaLocationArrow />}
+          position="right"
         />
-        <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="purple" />
-      </div>
-      <div className="h-screen w-full dark:bg-black:100 bg-black-100  dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
-        {/* Radial gradient for the container to give a faded look */}
-
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-      </div>
-
-      <div className="flex justify-center relative my-20-z-10">
-        <div className="max-w-[89vw] mdL:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h1 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-100">
-            Pixel-Perfect Solutions
-          </h1>
-
-          <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Turning Ideas into Reality"
-          />
-
-          <p className="text-center md:tracking-wider mb-4 mt-2 text-sm md:text-lg lg:text-2xl">
-            Hey, I&apos;m Amr a Full-Stack Engineer.
-          </p>
-
-          <a href="#about">
-            <MagicButton
-              title="Check my Work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
-        </div>
-      </div>
-    </div>
+      </a>
+    </BackgroundLines>
   );
 };
 

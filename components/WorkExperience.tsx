@@ -4,7 +4,7 @@ import { TechCard } from "./ui/TechCard";
 
 const WorkExperience = () => {
   return (
-    <section className="my-10">
+    <section className="my-10" id="work">
       <div className="relative min-h-screen flex items-center justify-center flex-col">
         <h3 className="heading font-bold justify-center text-center">
           My work <span className="text-purple">experience</span>

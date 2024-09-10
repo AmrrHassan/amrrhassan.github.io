@@ -5,8 +5,8 @@ import { FaLocationArrow } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-40 pb-20" id="contact">
-      <div className="w-full absolute -bottom-72 min-h-96">
+    <footer className="w-full pt-40 pb-0 mb-0" id="contact">
+      <div className="w-full absolute -bottom-72 min-h-96 sm:-bottom-0">
         <img src="/svg/footer-grid.svg" alt="footer-grid" />
       </div>
       <div className="flex flex-col items-center">
@@ -27,8 +27,8 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="text-white-200 md:text-base text-sm md:font-normal font-light">
+      <div className="flex mt-20 pb-1 md:flex-row flex-col justify-between items-center">
+        <p className="text-white-200 md:text-base text-sm md:font-normal font-light sm:text-center">
           {" "}
           Copyright &copy; 2024 Amr Hafez. All rights reserved.
         </p>

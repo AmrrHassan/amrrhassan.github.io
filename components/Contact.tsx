@@ -56,7 +56,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="my-10">
+    <section className="my-10" id="contact">
       <div className="relative min-h-screen flex items-center justify-center flex-col">
         <img
           src="/images/terminal.png"
