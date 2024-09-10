@@ -9,6 +9,7 @@ import Approach  from "@/components/Approach";
 import Contact  from "@/components/Contact";
 import HeroTwo  from "@/components/HeroTwo";
 import Footer  from "@/components/Footer";
+import WorkExperience  from "@/components/WorkExperience";
 
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
         <Clients /> 
         <Grid divID="" gridItems={gridItemsTwo} />
         <Approach />
+        <WorkExperience />
         <Contact />
         <Footer />
       </div>
