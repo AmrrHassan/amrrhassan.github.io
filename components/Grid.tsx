@@ -13,9 +13,9 @@ interface GridItem {
 }
 
 
-const Grid = ({ gridItems }: { gridItems: GridItem[] }) => {
+const Grid = ({ gridItems, divID }: { gridItems: GridItem[], divID: string }) => {
   return (
-    <section id="about">
+    <section id={divID}>
         <BentoGrid>
             {gridItems.map((item: GridItem) => (
                 <BentoGridItem

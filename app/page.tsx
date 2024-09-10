@@ -7,21 +7,26 @@ import RecentProjects  from "@/components/RecentProjects";
 import Clients  from "@/components/Clients";
 import Approach  from "@/components/Approach";
 import Contact  from "@/components/Contact";
+import HeroTwo  from "@/components/HeroTwo";
+import Footer  from "@/components/Footer";
+
 
 export default function Home() {
   return (
-    <main id="about" className="relative dark:bg-black-100 light:bg[#f0f0f0] flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <main className="relative dark:bg-black-100 light:bg[#f0f0f0] flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
         <FloatingNav
           navItems={navItems}
         />
-        <Hero />
-        <Grid gridItems={gridItems} />
+        <HeroTwo />
+        {/* <Hero /> */} 
+        <Grid divID="about" gridItems={gridItems} />
         <RecentProjects />
         <Clients /> 
-        <Grid gridItems={gridItemsTwo} />
+        <Grid divID="" gridItems={gridItemsTwo} />
         <Approach />
         <Contact />
+        <Footer />
       </div>
     </main>
   );

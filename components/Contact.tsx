@@ -61,7 +61,7 @@ const Contact = () => {
         <img
           src="/images/terminal.png"
           alt="terminal-background"
-          className="absolute inset-9 h-full w-full object-fit min-h-screen"
+          className="absolute inset-9 h-full w-full object-fit-cover lg:object-fit min-h-screen"
         />
         <div className="z-10 max-w-3xl mx-auto px-4 md:px-0 py-8">
 
@@ -88,7 +88,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="John Doe"
+                placeholder="My name is.."
               />
             </label>
             <label className="space-y-3">
