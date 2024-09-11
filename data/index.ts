@@ -110,7 +110,6 @@ export const projects = [
       "svg/TypeScript.svg",
       "svg/framer.svg",
       "svg/Tailwind.svg",
-      "svg/Nodejs.svg",
     ],
     link: "https://majarrah.com",
   },

@@ -6,12 +6,12 @@ import { FaLocationArrow } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer
-      className="w-full sm:pt-5 pb-0 mb-[50px] md:mb-5"
+      className="w-full pt-10 sm:pt-5 pb-0 mb-[50px] md:mb-5"
       id="contact"
     >
-      {/* <div className="w-full absolute -bottom-40 sm:fixed sm:bottom-0 sm:inset-x-0 sm:inset-y-auto min-h-96 sm:min-h-0">
-        <img src="/svg/footer-grid.svg" alt="footer-grid" height={100} />
-      </div> */}
+      <div className="w-full absolute -bottom-80 sm:-bottom-60 left-0 sm:-left-50 sm:inset-x-10 sm:inset-y-auto min-h-96 sm:min-h-0">
+        <img src="/svg/footer-grid.svg" alt="footer-grid" />
+      </div>
 
       <div className="flex flex-col items-center">
         <h3 className="heading lg:max-w-[45vw] text-center font-bold">
@@ -37,7 +37,7 @@ const Footer = () => {
           Copyright &copy; 2024 Amr Hafez
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6 sm:pt-3">
+        <div className="flex items-center md:gap-3 gap-6 pt-3">
           {socialMedia.map((profile) => (
             <div
               key={profile.id}

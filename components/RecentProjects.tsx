@@ -31,7 +31,7 @@ const RecentProjects = () => {
   };
 
   return (
-    <div className="py-20 mt-10 mb-10" id="projects">
+    <div className="py-10 sm:py-20 mt-10 mb-10" id="projects">
       <h1 className="heading font-bold justify-center text-center">
         A selection of
         <span className="text-purple"> recent projects</span>

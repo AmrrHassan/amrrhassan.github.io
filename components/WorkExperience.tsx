@@ -10,10 +10,10 @@ const WorkExperience = () => {
           My work <span className="text-purple">experience</span>
         </h3>
         <div className="work-container my-10">
-          <div className="work-card">
+          <div className="work-card px-6 sm:px-0">
             <TechCard />
           </div>
-          <div className="work-content sm:grid-cols-1 md:grid-cols-1">
+          <div className="work-content sm:grid-cols-1 md:grid-cols-1 px-4">
             <div className="sm:py-10 py-5 sm:px-5 px-2.5">
               {workExperience.map(
                 ({ id, name, title, pos, duration, icon, location }) => (
