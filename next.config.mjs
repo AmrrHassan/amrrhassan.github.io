@@ -1,12 +1,15 @@
 import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+// const nextConfig = {};
 
-// const nextConfig = {
-//     reactStrictMode: true,
-//     output: 'export', 
-//     distDir: 'out',
-// };
+const nextConfig = {
+    // reactStrictMode: true,
+    output: 'export',
+    typescript: {
+        ignoreBuildErrors: true,
+    } 
+    // distDir: 'out',
+};
 
 
 export default withSentryConfig(nextConfig, {

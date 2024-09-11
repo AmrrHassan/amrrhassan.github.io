@@ -15,8 +15,8 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h3 className="heading lg:max-w-[45vw] text-center font-bold">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
+          Ready to start <span className="text-purple">your</span> new
+          project?
         </h3>
         <p className="text-white-200 md:mt-10 my-5 text-center">
           Get in touch with me today to discuss how I can help you grow your
@@ -31,10 +31,10 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="flex mt-20 pb-1 md:flex-row flex-col sm:flex-row justify-between items-center">
-        <p className="sm:text-center text-white-200 md:text-base text-sm md:font-normal font-light">
-          {" "}
-          Copyright &copy; 2024 Amr Hafez. All rights reserved.
+      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+        <p className="md:text-base text-sm md:font-normal font-light">
+      {" "}
+          Copyright &copy; 2024 Amr Hafez
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
