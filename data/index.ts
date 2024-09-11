@@ -169,7 +169,7 @@ export const projects = [
       "svg/Apache.svg",
       "svg/Materialui.svg",
       "svg/PHP.svg",
-      "svg/Javascript.svg",
+      "svg/JavaScript.svg",
     ],
     link: "https://izzyapparel.com",
   },
@@ -178,7 +178,7 @@ export const projects = [
     title: "Jellies",
     des: "An e-commerce platform for jelly-based snacks and confectioneries.",
     img: "images/project/Jellies.png",
-    iconLists: ["svg/Ruby.svg", "svg/Javascript.svg"],
+    iconLists: ["svg/Ruby.svg", "svg/JavaScript.svg"],
     link: "https://jellieseg.com",
   },
   {
@@ -187,7 +187,7 @@ export const projects = [
     des: "Custom Wedding Invitation with 3D interactions.",
     img: "images/project/wedding.gif",
     iconLists: [
-      "svg/Three.svg",
+      "svg/three.svg",
       "svg/Webpack.svg",
       "svg/React.svg",
       "svg/TypeScript.svg",
@@ -287,7 +287,14 @@ export const projects = [
     title: "EverTrade",
     des: "An import-export company facilitating global trade in various industries.",
     img: "images/project/EverTrade.png",
-    iconLists: ["svg/shipping.svg", "svg/global.svg"],
+    iconLists: [
+      "svg/WordPress.svg",
+      "svg/MySQL.svg",
+      "svg/Apache.svg",
+      "svg/Materialui.svg",
+      "svg/PHP.svg",
+      "svg/host.svg",
+    ],
     link: "https://evertrade-eg.com",
   },
   {
@@ -513,7 +520,7 @@ export const projects = [
     img: "images/project/Honeylandsa.png",
     iconLists: [
       "svg/React.svg",
-      "svg/Next.svg",
+      "svg/next.svg",
       "svg/TypeScript.svg",
       "svg/Tailwind.svg",
       "svg/Webpack.svg",
@@ -523,7 +530,6 @@ export const projects = [
     link: "#",
   },
 ];
-
 
 export const companies = [
   {
