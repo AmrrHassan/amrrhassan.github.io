@@ -79,9 +79,9 @@ export const projects = [
     img: "images/project/izzyapp.png",
     iconLists: [
       "svg/Flutter.svg",
-      "svg/firebase.svg",
+      "svg/Firebase.svg",
       "svg/Dart.svg",
-      "svg/Sqlite.svg",
+      "svg/SQLite.svg",
     ],
     link: "https://izzyapparel.com",
   },
@@ -92,7 +92,7 @@ export const projects = [
     img: "images/project/Alafein.png",
     iconLists: [
       "svg/Flutter.svg",
-      "svg/firebase.svg",
+      "svg/Firebase.svg",
       "svg/Angular.svg",
       "svg/Swift.svg",
       "svg/Kotlin.svg",
@@ -106,7 +106,7 @@ export const projects = [
     img: "images/project/Majarrah.png",
     iconLists: [
       "svg/React.svg",
-      "svg/Next.svg",
+      "svg/next.svg",
       "svg/TypeScript.svg",
       "svg/framer.svg",
       "svg/Tailwind.svg",
@@ -151,7 +151,7 @@ export const projects = [
     img: "images/project/Innova.png",
     iconLists: [
       "svg/React.svg",
-      "svg/Next.svg",
+      "svg/next.svg",
       "svg/TypeScript.svg",
       "svg/Tailwind.svg",
       "svg/Nodejs.svg",

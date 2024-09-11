@@ -20,7 +20,7 @@ const Hero = () => {
         I&apos;ll be showcasing my most prized projects, sharing my experiences
         and insights.
       </p>
-      <a href="#about" className="py-10">
+      <a href="#projects" className="py-10">
         <MagicButton
           title="Check my Work"
           icon={<FaLocationArrow />}

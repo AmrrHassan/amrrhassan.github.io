@@ -59,12 +59,11 @@ const Contact = () => {
     <section className="my-10" id="contact">
       <div className="relative min-h-screen flex items-center justify-center flex-col">
         <img
-          src="/images/terminal.png"
+          src="/images/terminalTwo.png"
           alt="terminal-background"
-          className="absolute inset-9 !sm:inset-0 h-full w-full object-fit-cover lg:object-fit min-h-screen"
+          className="absolute sm:inset-9 h-full w-full object-fit-cover min-h-screen sm:hidden"
         />
-        <div className="z-10 max-w-3xl mx-auto px-4 md:px-0 py-8 sm:pt-12">
-
+        <div className="pt-28 md:py-8 z-10 max-w-3xl mx-auto px-4">
           <h3 className="heading font-bold justify-center text-center">
             Let&apos;s get <span className="text-purple"> in touch</span>
           </h3>

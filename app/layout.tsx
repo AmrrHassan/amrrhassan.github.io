@@ -4,10 +4,27 @@ import "./globals.css";
 import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Amr's Portfolio",
-  description: "Full-Stack Engineer / Developer Portfolio",
-};
+  export const metadata: Metadata = {
+    title: "Amr Hassan",
+    description: "Full-Stack Engineer / Developer Portfolio",
+    openGraph: {
+      title: "Amr Hassan - Full-Stack Engineer",
+      description: "Explore Amr Hassan's portfolio, showcasing full-stack development projects and expertise.",
+      url: "https://amrrhassan.github.io", 
+      type: "website",
+      images: [
+        {
+          url: "https://amrrhassan.github.io/images/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Amr Hassan Portfolio",
+        },
+      ],
+    },
+    keywords: ["Full-Stack Engineer", "Web Developer", "Amr Hassan Portfolio", "React", "Node.js", "WordPress", "Amr Hafez", "Amr Hassan Hafez"],
+    robots: "index, follow",
+  };
+  
 
 export default function RootLayout({
   children,
