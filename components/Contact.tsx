@@ -28,8 +28,8 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        process.env.NEXT_PUBLIC_SERVICE_ID ?? "",
-        process.env.NEXT_PUBLIC_TEMPLATE_ID ?? "",
+        "service_hxguw6v",
+        "template_w5wjgfr",
         {
           from_name: form.name,
           to_name: "Amr",
@@ -37,7 +37,7 @@ const Contact = () => {
           to_email: "amrhassanhafez@hotmail.com",
           message: form.message,
         },
-        process.env.NEXT_PUBLIC_USER_ID ?? "",
+        "EQPVSF0qap2MTHvhQ"
       );
 
       setLoading(false);

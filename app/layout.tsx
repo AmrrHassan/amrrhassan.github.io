@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"] });
       type: "website",
       images: [
         {
-          url: "https://amrrhassan.github.io/images/og-image.jpg",
+          url: "https://amrrhassan.github.io/favicon-32x32.png",
           width: 1200,
           height: 630,
           alt: "Amr Hassan Portfolio",

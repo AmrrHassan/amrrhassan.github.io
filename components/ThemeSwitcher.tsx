@@ -20,9 +20,9 @@ const ThemeSwitcher = () => {
       className="p-2 rounded-md"
     >
       {theme === "dark" ? (
-        <FaSun className="text-yellow-500" size={20} />
-      ) : (
         <FaMoon className="text-gray-900" size={20} />
+      ) : (
+        <FaSun className="text-yellow-500" size={20} />
       )}
     </button>
   );
