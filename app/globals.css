@@ -129,7 +129,8 @@
   }
 
   .work-container {
-    @apply grid grid-cols-[1fr_3fr] gap-5 mt-12 items-center;
+    @apply grid lg:grid-cols-[1fr_3fr] gap-5 mt-12 items-center;
+
   }  
 
   .work-card {
@@ -138,6 +139,7 @@
 
   .work-content_container {
     @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 cursor-pointer hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
+
   }
 
 

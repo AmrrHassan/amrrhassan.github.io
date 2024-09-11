@@ -110,9 +110,7 @@ export const projects = [
       "svg/TypeScript.svg",
       "svg/framer.svg",
       "svg/Tailwind.svg",
-      "svg/Vitejs.svg",
       "svg/Nodejs.svg",
-      "svg/MongoDB.svg",
     ],
     link: "https://majarrah.com",
   },
@@ -156,7 +154,6 @@ export const projects = [
       "svg/Next.svg",
       "svg/TypeScript.svg",
       "svg/Tailwind.svg",
-      "svg/Webpack.svg",
       "svg/Nodejs.svg",
       "svg/MongoDB.svg",
     ],
@@ -189,7 +186,7 @@ export const projects = [
     id: 27,
     title: "Wedding Invitations Website",
     des: "Custom Wedding Invitation with 3D interactions.",
-    img: "images/project/Wedding.png",
+    img: "images/project/wedding.gif",
     iconLists: [
       "svg/Three.svg",
       "svg/Webpack.svg",
@@ -528,38 +525,6 @@ export const projects = [
   },
 ];
 
-export const testimonials = [
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-];
 
 export const companies = [
   {
@@ -618,7 +583,7 @@ export const workExperience = [
     title:
       "Develop and modify applications using different tech stacks according to client needs. Successfully completed over 50+ projects with a 100% client satisfaction rate.",
     icon: "images/upwork.png",
-    duration: "January 2021 - Present",
+    duration: "Jan 2021 - Present",
     location: "Remote",
   },
   {
@@ -628,7 +593,7 @@ export const workExperience = [
     title:
       "Develop and oversee infrastructure, security, and development of the company’s website, Unit testing, SEO Optimizaiton.",
     icon: "images/ceema.png",
-    duration: "October 2023 - July 2024",
+    duration: "Oct 2023 - July 2024",
     location: "Dubai, UAE",
   },
   {
@@ -638,7 +603,7 @@ export const workExperience = [
     title:
       "Collaborated with a team of developers on a project using ReactJS for frontend and NodeJS for backend. Received mentorship and guidance from experienced developers, enhancing technical skills.",
     icon: "images/enozom.png",
-    duration: "July 2023 - August 2023",
+    duration: "July 2023 - Aug 2023",
     location: "Alexandria, Egypt",
   },
   {

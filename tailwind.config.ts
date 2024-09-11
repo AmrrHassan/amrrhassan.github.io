@@ -163,9 +163,16 @@ const config = {
         fifth: "moveInCircle 20s ease infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
-          move: "move 5s linear infinite",
+        move: "move 5s linear infinite",
       },
     },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+    },
+    purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   },
   plugins: [
     require("tailwindcss-animate"),

@@ -13,7 +13,7 @@ const WorkExperience = () => {
           <div className="work-card">
             <TechCard />
           </div>
-          <div className="work-content">
+          <div className="work-content sm:grid-cols-1 md:grid-cols-1">
             <div className="sm:py-10 py-5 sm:px-5 px-2.5">
               {workExperience.map(
                 ({ id, name, title, pos, duration, icon, location }) => (
@@ -29,7 +29,7 @@ const WorkExperience = () => {
                       <p className="font-bold text-white-200">{name}</p>
                       <p className="text-sm mb-5 text-white-200">
                         {pos} - {duration}{" "}
-                        <span className="text-white-200 float-end">
+                        <span className="text-white-200 block lg:inline lg:float-end lg:py-3">
                           {" "}
                           {location}
                         </span>
