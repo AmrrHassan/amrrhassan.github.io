@@ -32,6 +32,7 @@ export const metadata: Metadata = {
     "WordPress",
     "Amr Hafez",
     "Amr Hassan Hafez",
+    "IZZY",
   ],
   robots: "index, follow",
 };
@@ -57,6 +58,7 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag() { dataLayer.push(arguments); }
               gtag('js', new Date());
+
               gtag('config', 'G-T435H88EVQ');
             `,
           }}
