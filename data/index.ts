@@ -176,7 +176,7 @@ export const projects = [
   {
     id: 14,
     title: "Jellies",
-    des: "An e-commerce platform for jelly-based snacks and confectioneries.",
+    des: "An e-commerce platform for jelly-based products built with Shopify.",
     img: "images/project/Jellies.png",
     iconLists: ["svg/Ruby.svg", "svg/JavaScript.svg"],
     link: "https://jellieseg.com",
