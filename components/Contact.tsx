@@ -61,7 +61,7 @@ const Contact = () => {
         <img
           src="/images/terminalTwo.png"
           alt="terminal-background"
-          className="absolute sm:inset-9 h-full w-full object-fit-cover min-h-screen sm:hidden"
+          className="absolute sm:inset-9 h-full w-full object-fit-cover min-h-screen"
         />
         <div className="pt-28 md:py-8 z-10 max-w-3xl mx-auto px-4">
           <h3 className="heading font-bold justify-center text-center">

@@ -4,12 +4,17 @@
 
 @layer base {
   :root {
+
     /* Light theme colors */
-    --text-primary-light: #000000;
-    --text-secondary-light: #333333;
-    --text-accent-light: #555555;
+    --text-primary-light: #222;
+    --text-secondary-light: #555555;
+    --text-accent-light: #888;
     --heading-font-size-light: 2rem;
     --body-font-size-light: 1rem;
+    --text-third-color-light: #5d5f82;
+    --background-layer-light: #b9bac798;
+
+
 
     /* Dark theme colors */
     --text-primary-dark: #ffffff;
@@ -17,13 +22,12 @@
     --text-accent-dark: #aaaaaa;
     --heading-font-size-dark: 2rem;
     --body-font-size-dark: 1rem;
+    --text-third-color-dark: #c1c2d3;
+    --background-layer-dark: #10132E;
 
     /* Existing variables */
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
-    --spotlight-color-1-light: #ff0000;
-    --spotlight-color-2-light: #00ff00;
-    --spotlight-color-3-light: #0000ff;
 
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
@@ -64,6 +68,8 @@
     --text-accent: var(--text-accent-dark);
     --heading-font-size: var(--heading-font-size-dark);
     --body-font-size: var(--body-font-size-dark);
+    --text-third: var(--text-third-color);
+    --background-layer: var(--background-layer);
 
     /* Existing dark theme variables */
     --spotlight-color-1: var(--spotlight-color-1-dark);
@@ -73,12 +79,15 @@
 
   .light {
     --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --foreground: 240 10% 35%;
     --text-primary: var(--text-primary-light);
     --text-secondary: var(--text-secondary-light);
     --text-accent: var(--text-accent-light);
+    --text-third: var(--text-third-color);
     --heading-font-size: var(--heading-font-size-light);
     --body-font-size: var(--body-font-size-light);
+    --background-layer: var(--background-layer);
+
 
     /* Existing light theme variables */
     --spotlight-color-1: var(--spotlight-color-1-light);
@@ -139,12 +148,10 @@
 
   .work-content_container {
     @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 cursor-pointer hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
-
   }
 
-
   .work-content_logo {
-    @apply rounded-3xl w-16 h-16 p-2 bg-black-200;
+    @apply rounded-3xl w-16 h-16 p-2 bg-[var(--background-layer)];
   }
 
   .work-content_bar {

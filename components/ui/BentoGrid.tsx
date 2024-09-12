@@ -64,11 +64,12 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border border-white/[0.1]",
+        "row-span-1 relative overflow-hidden rounded-3xl group/bento shadow-xl first-letter:hover:shadow-2xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border border-white/[0.1]",
         className
       )}
       style={{
-        background: "rgb(4,7,29)",
+        background:
+          "linear-gradient(to bottom right, var(--background), rgb(20, 30, 60))",
         backgroundColor:
           "linear-gradient(to bottom right, rgb(4, 7, 29), rgb(20, 30, 60))",
       }}
@@ -100,7 +101,7 @@ export const BentoGridItem = ({
             <img
               src={spareImg}
               alt={spareImg}
-              className={`object-cover, object-center w-full h-full`}
+              className={`object-cover object-center w-full h-full`}
             />
           )}
         </div>
@@ -114,10 +115,11 @@ export const BentoGridItem = ({
         <div
           className={cn(
             titleClassName,
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p10"
+            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p10",
+            id === 6 || id === 1? "text-white" : "text-[var(--text-primary)]"
           )}
         >
-          <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
+          <div className="font-sans font-extralight text-[var(--text-third)] light:text-[var(--text-secondary)] text-sm md:text-xs lg:text-base z-10">
             {description}
           </div>
           <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
@@ -129,23 +131,23 @@ export const BentoGridItem = ({
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:right-2">
               <div className="flex flex-col gap-3 lg:gap-4">
-                {["ReactJS", "NextJS", "TypeScript", "ReactJS" ].map((item) => (
+                {["ReactJS", "NextJS", "TypeScript", "ReactJS"].map((item) => (
                   <span
                     key={item}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[var(--background-layer)]"
                   >
                     {item}
                   </span>
                 ))}
-                <span className="py-4 lg:py-6 px-3 rounded-lg text-center bg-[#10132e]" />
+                <span className="py-4 lg:py-6 px-3 rounded-lg text-center bg-[var(--background-layer)]" />
               </div>
               <div className="flex flex-col gap-3 lg:gap-6">
-                <span className="py-4 lg:py-3 px-3 rounded-lg text-center bg-[#10132e]" />
+                <span className="py-4 lg:py-3 px-3 rounded-lg text-center bg-[var(--background-layer)]" />
 
                 {["Flutter", "NodeJS", "ThreeJS"].map((item) => (
                   <span
                     key={item}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-centerbg-[var(--background-layer)]"
                   >
                     {item}
                   </span>
