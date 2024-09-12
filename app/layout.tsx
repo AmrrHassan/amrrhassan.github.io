@@ -61,12 +61,12 @@ export default function RootLayout({
       <head>
         {/* Google Analytics */}
         <Script
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=G-T435H88EVQ`}
         />
         <Script
           id="google-analytics"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
