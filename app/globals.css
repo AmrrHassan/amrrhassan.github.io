@@ -4,7 +4,6 @@
 
 @layer base {
   :root {
-
     /* Light theme colors */
     --text-primary-light: #222;
     --text-secondary-light: #555555;
@@ -12,9 +11,10 @@
     --heading-font-size-light: 2rem;
     --body-font-size-light: 1rem;
     --text-third-color-light: #5d5f82;
-    --background-layer-light: #b9bac798;
-
-
+    --background-layer-light: #e5e5e659;
+    --accent-purple-light: rgb(160, 114, 230);
+    --logo-background-light: #020617;
+    --background-layer-x-light: #020617;
 
     /* Dark theme colors */
     --text-primary-dark: #ffffff;
@@ -23,7 +23,10 @@
     --heading-font-size-dark: 2rem;
     --body-font-size-dark: 1rem;
     --text-third-color-dark: #c1c2d3;
-    --background-layer-dark: #10132E;
+    --background-layer-dark: #10132e;
+    --accent-purple-dark: rgb(203 172 249);
+    --logo-background-dark: rgb(0 0 0 0);
+    --background-layer-x-dark: #10132e;
 
     /* Existing variables */
     --background: 0 0% 100%;
@@ -68,8 +71,11 @@
     --text-accent: var(--text-accent-dark);
     --heading-font-size: var(--heading-font-size-dark);
     --body-font-size: var(--body-font-size-dark);
-    --text-third: var(--text-third-color);
-    --background-layer: var(--background-layer);
+    --text-third: var(--text-third-color-dark);
+    --background-layer: var(--background-layer-dark);
+    --accent-purple: var(--accent-purple-dark);
+    --logo-background: var(--logo-background-dark);
+    --background-layer-x: var(--background-layer-x-dark);
 
     /* Existing dark theme variables */
     --spotlight-color-1: var(--spotlight-color-1-dark);
@@ -83,11 +89,13 @@
     --text-primary: var(--text-primary-light);
     --text-secondary: var(--text-secondary-light);
     --text-accent: var(--text-accent-light);
-    --text-third: var(--text-third-color);
+    --text-third: var(--text-third-color-light);
     --heading-font-size: var(--heading-font-size-light);
     --body-font-size: var(--body-font-size-light);
-    --background-layer: var(--background-layer);
-
+    --background-layer: var(--background-layer-light);
+    --accent-purple: var(--accent-purple-light);
+    --logo-background: var(--logo-background-light);
+    --background-layer-x: var(--background-layer-x-light);
 
     /* Existing light theme variables */
     --spotlight-color-1: var(--spotlight-color-1-light);
@@ -139,8 +147,7 @@
 
   .work-container {
     @apply grid lg:grid-cols-[1fr_3fr] gap-5 mt-12 items-center;
-
-  }  
+  }
 
   .work-card {
     @apply col-span-1 rounded-lg;
@@ -151,10 +158,10 @@
   }
 
   .work-content_logo {
-    @apply rounded-3xl w-16 h-16 p-2 bg-[var(--background-layer)];
+    @apply rounded-3xl w-16 h-16 p-2 bg-[var(--background-layer-x)];
   }
 
   .work-content_bar {
-    @apply flex-1 w-0.5 mt-4 h-full bg-black-300 group-hover:bg-black-200 group-last:hidden;
+    @apply flex-1 w-0.5 mt-4 h-full bg-[var(--background-layer)] group-hover:bg-black-200 group-last:hidden;
   }
 }

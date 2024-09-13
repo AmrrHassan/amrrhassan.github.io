@@ -65,9 +65,9 @@ const Contact = () => {
         />
         <div className="pt-28 md:py-8 z-10 max-w-3xl mx-auto px-4">
           <h3 className="heading font-bold justify-center text-center">
-            Let&apos;s get <span className="text-purple"> in touch</span>
+            Let&apos;s get <span className="text-[var(--accent-purple)]"> in touch</span>
           </h3>
-          <p className="text-lg text-white-200 mt-3 justify-center text-center">
+          <p className="text-lg text-[text-[var(--secondary)]] mt-3 justify-center text-center">
             Whether you&apos;re looking to build a new project from scratch, or
             need help with an existing one, I&apos;m here to help. Let&apos;s
             chat about your needs and see how I can assist you.
@@ -78,7 +78,7 @@ const Contact = () => {
             onSubmit={handleSubmit}
             className="mt-12 flex flex-col space-y-7"
           >
-            <label className="space-y-3 text-lg text-white-200">
+            <label className="space-y-3 text-lg">
               <span className="field-label block">Full Name</span>
               <input
                 type="text"
@@ -90,7 +90,7 @@ const Contact = () => {
                 placeholder="My name is.."
               />
             </label>
-            <label className="space-y-3">
+            <label className="space-y-3 text-lg">
               <span className="field-label">Email</span>
               <input
                 type="email"
@@ -102,7 +102,7 @@ const Contact = () => {
                 placeholder="amrhassanhafez@hotmail.com"
               />
             </label>
-            <label className="space-y-3">
+            <label className="space-y-3 text-lg">
               <span className="field-label">Your message</span>
               <textarea
                 name="message"

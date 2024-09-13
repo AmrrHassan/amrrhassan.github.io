@@ -34,7 +34,7 @@ const RecentProjects = () => {
     <div className="py-10 sm:py-20 mt-10 mb-10" id="projects">
       <h3 className="heading font-bold justify-center text-center">
         A selection of
-        <span className="text-purple"> recent projects</span>
+        <span className="text-[var(--accent-purple)]"> recent projects</span>
       </h3>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-16 mt-10">
         {projects
@@ -85,7 +85,7 @@ const RecentProjects = () => {
                     {iconLists.map((icon, index) => (
                       <div
                         key={index}
-                        className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                        className="border border-white/[.2] rounded-full bg-[var(--background-layer)] lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                         style={{
                           transform: `translateX(-${5 * index + 2}px)`,
                         }}
@@ -96,7 +96,7 @@ const RecentProjects = () => {
                   </div>
 
                   <div className="flex justify-center items-center">
-                    <p className="flex lg:text-l md:text-xs text-sm text-purple">
+                    <p className="flex lg:text-l md:text-xs text-sm text-[var(--accent-purple)]">
                       Check Live Site
                     </p>
                     <FaLocationArrow className="ms-3" color="#CBACF9" />

@@ -147,7 +147,7 @@ export const BentoGridItem = ({
                 {["Flutter", "NodeJS", "ThreeJS"].map((item) => (
                   <span
                     key={item}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-centerbg-[var(--background-layer)]"
+                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[var(--background-layer)]"
                   >
                     {item}
                   </span>

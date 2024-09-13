@@ -15,7 +15,7 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h3 className="heading lg:max-w-[45vw] text-center font-bold">
-          Ready to start <span className="text-purple">your</span> new
+          Ready to start <span className="text-[var(--accent-purple)]">your</span> new
           project?
         </h3>
         <p className="text-white-200 md:mt-10 my-5 text-center">

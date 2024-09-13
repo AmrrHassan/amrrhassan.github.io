@@ -7,7 +7,7 @@ const WorkExperience = () => {
     <section className="my-10" id="work">
       <div className="relative min-h-screen flex items-center justify-center flex-col">
         <h3 className="heading font-bold justify-center text-center">
-          My work <span className="text-purple">experience</span>
+          My work <span className="text-[var(--accent-purple)]">experience</span>
         </h3>
         <div className="work-container my-10">
           <div className="work-card px-6 sm:px-0">
@@ -26,15 +26,15 @@ const WorkExperience = () => {
                     </div>
 
                     <div className="sm:p-5 px-2.5 py-5">
-                      <p className="font-bold text-white-200">{name}</p>
-                      <p className="text-sm mb-5 text-white-200">
+                      <p className="font-bold text-[var(--secondary)]">{name}</p>
+                      <p className="text-sm mb-5 text-[var(--secondary)]">
                         {pos} - {duration}{" "}
-                        <span className="text-white-200 block lg:inline lg:float-end lg:py-3">
+                        <span className="text-[var(--secondary)] block lg:inline lg:float-end lg:py-3">
                           {" "}
                           {location}
                         </span>
                       </p>
-                      <p className="group-hover:text-white transition ease-in-out duration-500">
+                      <p className="group-hover:text-[var(--secondary)] transition ease-in-out duration-500">
                         {title}
                       </p>
                     </div>
