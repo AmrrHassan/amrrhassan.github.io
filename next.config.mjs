@@ -3,11 +3,14 @@ import {withSentryConfig} from '@sentry/nextjs';
 // const nextConfig = {};
 
 const nextConfig = {
-    // reactStrictMode: true,
-    output: 'export',
-    typescript: {
-        ignoreBuildErrors: true,
-    } 
+    webpack: (config) => {
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        'three/tsl': 'three/examples/jsm/nodes/Nodes.js',
+        'three/addons/': 'three/examples/jsm/',
+      };
+      return config;
+    },
     // distDir: 'out',
 };
 

@@ -53,22 +53,19 @@ const RecentProjects = () => {
             >
               <PinContainer title={link} href={link}>
                 <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden h-[30vh] lg:h-[30vh] sm-h[40vh] mb-10">
-                  {/* <div
-                    className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                    style={{ backgroundColor: "#13162D" }}
-                  > */}
-                  {/* <img src="images/bg.png" alt="bgimg" /> */}
-                  {/* </div> */}
                   <img
                     src={img}
-                    alt={title}
+                    alt={`Project - ${title}`}
                     className="z-10 absolute bottom-0 object-cover rounded-lg w-full h-full"
+                    width="570"
+                    height="340"
+                    loading="lazy"
                   />
                 </div>
 
-                <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+                <h4 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                   {title}
-                </h1>
+                </h4>
 
                 <p
                   className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
@@ -90,17 +87,29 @@ const RecentProjects = () => {
                           transform: `translateX(-${5 * index + 2}px)`,
                         }}
                       >
-                        <img src={icon} alt={icon} className="p-2" />
+                        <img
+                          src={icon}
+                          alt={`Tech Icon ${index + 1}`}
+                          className="p-2"
+                          width="40"
+                          height="40"
+                          loading="lazy"
+                        />
                       </div>
                     ))}
                   </div>
 
-                  <div className="flex justify-center items-center">
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex justify-center items-center cursor-pointer hover:opacity-80 transition"
+                  >
                     <p className="flex lg:text-l md:text-xs text-sm text-[var(--accent-purple)]">
                       Check Live Site
                     </p>
                     <FaLocationArrow className="ms-3" color="#CBACF9" />
-                  </div>
+                  </a>
                 </div>
               </PinContainer>
             </div>
@@ -109,22 +118,28 @@ const RecentProjects = () => {
 
       <div className="flex justify-center mt-8 gap-4">
         {visibleProjects < projects.length && (
-          <a onClick={handleLoadMore}>
+          <button
+            onClick={handleLoadMore}
+            className="cursor-pointer hover:opacity-80 transition"
+          >
             <MagicButton
               title="Load More"
               icon={<FaLocationArrow />}
               position="right"
             />
-          </a>
+          </button>
         )}
         {visibleProjects > 6 && (
-          <a onClick={handleCollapse}>
+          <button
+            onClick={handleCollapse}
+            className="cursor-pointer hover:opacity-80 transition"
+          >
             <MagicButton
               title="Collapse"
               icon={<FaLocationArrow />}
               position="right"
             />
-          </a>
+          </button>
         )}
       </div>
     </div>

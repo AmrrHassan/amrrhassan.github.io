@@ -1,14 +1,13 @@
 "use client";
 import { cn } from "@/utils/cn";
-import Image from "next/image";
 import { BackgroundGradientAnimation } from "./GradientBg";
-import { Globe } from "./Globe";
 import { GlobeDemo } from "./GridGlobe";
 import { useState } from "react";
 import animationData from "@/data/confetti.json";
 import Lottie from "react-lottie";
 import { MagicButton } from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+
 export const BentoGrid = ({
   className,
   children,
@@ -61,6 +60,7 @@ export const BentoGridItem = ({
       setCopied(false);
     }, 10000);
   };
+
   return (
     <div
       className={cn(
@@ -79,44 +79,42 @@ export const BentoGridItem = ({
           {img && (
             <img
               src={img}
-              alt={img}
+              alt={title ? String(title) : "Portfolio Image"}
               className={cn(imgClassName, "object-cover object-center")}
+              width="400" // Set a reasonable width
+              height="250" // Set a reasonable height
+              loading="lazy"
             />
-            // <Image
-            //   src={img}
-            //   alt={img}
-            //   className={cn(imgClassName, "object-cover object-center")}
-            //   layout="fill" // This will make the image fill its container
-            //   objectFit="cover" // Ensures the image covers the container without distorting
-            // />
           )}
         </div>
 
         <div
-          className={`absolute right-0 -bottom-5 ${
-            id === 5 && "w-full opacity-80"
-          }`}
+          className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
+            }`}
         >
           {spareImg && (
             <img
               src={spareImg}
-              alt={spareImg}
-              className={`object-cover object-center w-full h-full`}
+              alt={`Additional graphic for ${title ? String(title) : "Portfolio Item"}`}
+              className="object-cover object-center w-full h-auto"
+              width="200"
+              height="100"
+              loading="lazy"
             />
           )}
         </div>
 
         {id === 6 && (
           <BackgroundGradientAnimation>
-            <div className="absolute z-50 flex items-center jusify-center text-white font-bold" />
+            <div className="absolute z-50 flex items-center justify-center text-white font-bold" />
           </BackgroundGradientAnimation>
         )}
 
         <div
           className={cn(
             titleClassName,
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p10",
-            id === 6 || id === 1? "text-white" : "text-[var(--text-primary)]"
+            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10",
+            id === 6 || id === 1 ? "text-white" : "text-[var(--text-primary)]"
           )}
         >
           <div className="font-sans font-extralight text-[var(--text-third)] light:text-[var(--text-secondary)] text-sm md:text-xs lg:text-base z-10">

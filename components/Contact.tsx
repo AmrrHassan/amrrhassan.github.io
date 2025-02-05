@@ -56,80 +56,79 @@ const Contact = () => {
   };
 
   return (
-    <section className="my-10" id="contact">
-      <div className="relative min-h-screen flex items-center justify-center flex-col py-10">
+    <section className="relative min-h-screen flex items-center justify-center py-12" id="contact">
+      {/* Background Image */}
+      <div className="absolute inset-0">
         <img
           src="/images/terminalTwo.png"
           alt="terminal-background"
-          className="absolute sm:inset-9 h-full w-full object-fit-cover min-h-screen"
+          className="w-full h-full object-contain md:object-contain"
+          width="500" height="500"
         />
-        <div className="pt-28 md:py-8 z-10 max-w-3xl mx-auto px-4">
-          <h3 className="heading font-bold justify-center text-center">
-            Let&apos;s get <span className="text-[var(--accent-purple)]"> in touch</span>
-          </h3>
-          <p className="text-lg text-[text-[var(--secondary)]] mt-3 justify-center text-center">
-            Whether you&apos;re looking to build a new project from scratch, or
-            need help with an existing one, I&apos;m here to help. Let&apos;s
-            chat about your needs and see how I can assist you.
-          </p>
-
-          <form
-            ref={formRef}
-            onSubmit={handleSubmit}
-            className="mt-12 flex flex-col space-y-7"
-          >
-            <label className="space-y-3 text-lg">
-              <span className="field-label block">Full Name</span>
-              <input
-                type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                required
-                className="field-input"
-                placeholder="My name is.."
-              />
-            </label>
-            <label className="space-y-3 text-lg">
-              <span className="field-label">Email</span>
-              <input
-                type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                required
-                className="field-input"
-                placeholder="amrhassanhafez@hotmail.com"
-              />
-            </label>
-            <label className="space-y-3 text-lg">
-              <span className="field-label">Your message</span>
-              <textarea
-                name="message"
-                value={form.message}
-                onChange={handleChange}
-                required
-                rows={5}
-                className="field-input"
-                placeholder="Hello, I'm interested in..."
-              />
-            </label>
-
-            <button
-              className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 field-btn"
-              type="submit"
-              disabled={loading}
-            >
-              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 text-white backdrop-blur-3xl text-sm font-bold px-3 py-1">
-                {loading ? "Sending..." : "Send Message"}
-              </span>
-            </button>
-          </form>
-        </div>
+        <div className="absolute inset-0"></div> {/* Overlay for better readability */}
       </div>
-    </section>
-  );
+
+      {/* Contact Form */}
+      <div className="relative z-10 max-w-3xl w-full bg-opacity-90 backdrop-blur-lg rounded-lg shadow-xl px-6 sm:px-10 py-10">
+        <h3 className="text-3xl font-bold text-center text-white">
+          Let's get <span className="text-[var(--accent-purple)]"> in touch</span>
+        </h3>
+        <p className="text-lg text-gray-300 mt-3 text-center">
+          Whether you're looking to build a new project from scratch, or need help with an
+          existing one, I'm here to help. Let's chat about your needs and see how I can assist you.
+        </p>
+
+        <form ref={formRef} onSubmit={handleSubmit} className="mt-8 space-y-6">
+          <label className="block">
+            <span className="text-white">Full Name</span>
+            <input
+              type="text"
+              name="name"
+              value={form.name}
+              onChange={handleChange}
+              required
+              className="w-full mt-2 px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus:ring-2 focus:ring-purple-500 focus:outline-none"
+              placeholder="My name is..."
+            />
+          </label>
+
+          <label className="block">
+            <span className="text-white">Email</span>
+            <input
+              type="email"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+              required
+              className="w-full mt-2 px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus:ring-2 focus:ring-purple-500 focus:outline-none"
+              placeholder="your@email.com"
+            />
+          </label>
+
+          <label className="block">
+            <span className="text-white">Your message</span>
+            <textarea
+              name="message"
+              value={form.message}
+              onChange={handleChange}
+              required
+              rows={5}
+              className="w-full mt-2 px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus:ring-2 focus:ring-purple-500 focus:outline-none"
+              placeholder="Hello, I'm interested in..."
+            />
+          </label>
+
+          {/* Submit Button */}
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full py-3 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-bold text-lg transition-all border border-white cursor-pointer hover:cursor-pointer"
+          >
+            {loading ? "Sending..." : "Send Message"}
+          </button>
+        </form>
+      </div>
+    </section>);
 };
 
 export default Contact;

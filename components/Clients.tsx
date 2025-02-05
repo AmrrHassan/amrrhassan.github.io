@@ -3,31 +3,27 @@ import React from "react";
 
 const Clients = () => {
   return (
-    <div className="mb-20" id="clients">
-      <h1 className="heading font-bold justify-center text-center">
+    <div className="my-12" id="clients">
+      <h3 className="heading font-bold text-center">
         Clients that trust{" "}
         <span className="text-[var(--accent-purple)]">our service</span>
-      </h1>
+      </h3>
 
-    
-      <div className="flex flex-wrap items-center justify-center gap-8 md:gap-20 max-lg: mt-10">
+      <div className="max-w-screen-lg mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-10 mt-10 place-items-center">
         {companies.map(({ id, img, name }) => (
           <div
             key={id}
-            className="flex justify-center items-center md:max-w-80 max-w-32 h-24 gap-1 bg-[var(--logo-background)] rounded-full p-6"
+            className="flex justify-center items-center w-28 sm:w-32 md:w-36 h-24 bg-[var(--logo-background)] rounded-full p-4 shadow-md"
           >
             <img
-              className="md:w-24 w-20 object-contain transition duration-300 ease-in-out hover:scale-110"
               src={img}
               alt={name}
+              title={name}
+              loading="lazy"
+              width="144"
+              height="64"
+              className="w-full max-h-16 object-contain transition duration-300 ease-in-out hover:scale-110"
             />
-
-            {/* <img className="md:w-24 w-20" src={img} alt={name} /> */}
-            {/* {nameImg ? (
-              <img className="md:w-24 w-20" src={nameImg} alt={name} />
-            ) : (
-              <h3 className="text-center font-bold">{name}</h3>
-            )} */}
           </div>
         ))}
       </div>

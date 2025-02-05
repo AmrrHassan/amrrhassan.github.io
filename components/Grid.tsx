@@ -1,3 +1,4 @@
+'use client';
 import React from 'react'
 import { BentoGrid, BentoGridItem } from './ui/BentoGrid'
 
@@ -15,7 +16,7 @@ interface GridItem {
 
 const Grid = ({ gridItems, divID }: { gridItems: GridItem[], divID: string }) => {
   return (
-    <section id={divID}>
+    <section id={divID} className='mb-20'>
         <BentoGrid>
             {gridItems.map((item: GridItem) => (
                 <BentoGridItem
