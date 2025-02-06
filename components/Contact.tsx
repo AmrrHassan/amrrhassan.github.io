@@ -71,11 +71,11 @@ const Contact = () => {
       {/* Contact Form */}
       <div className="relative z-10 max-w-3xl w-full bg-opacity-90 backdrop-blur-lg rounded-lg shadow-xl px-6 sm:px-10 py-10">
         <h3 className="text-3xl font-bold text-center text-white">
-          Let's get <span className="text-[var(--accent-purple)]"> in touch</span>
+          Let&apos;s get <span className="text-[var(--accent-purple)]"> in touch</span>
         </h3>
         <p className="text-lg text-gray-300 mt-3 text-center">
-          Whether you're looking to build a new project from scratch, or need help with an
-          existing one, I'm here to help. Let's chat about your needs and see how I can assist you.
+          Whether you&apos;re looking to build a new project from scratch, or need help with an
+          existing one, I&apos;m here to help. Let&apos;s chat about your needs and see how I can assist you.
         </p>
 
         <form ref={formRef} onSubmit={handleSubmit} className="mt-8 space-y-6">

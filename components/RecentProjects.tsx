@@ -1,29 +1,21 @@
 "use client";
 
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/3d-pin";
-import { useState } from "react";
 import { MagicButton } from "./ui/MagicButton";
 
 const RecentProjects = () => {
   const [visibleProjects, setVisibleProjects] = useState(6);
-  const [isAnimating, setIsAnimating] = useState(false);
 
   const handleLoadMore = () => {
-    setIsAnimating(true);
-    setTimeout(() => {
-      setVisibleProjects((prev) => prev + 6);
-      setIsAnimating(false);
-    }, 400);
+    setVisibleProjects((prev) => prev + 6);
   };
 
   const handleCollapse = () => {
-    setIsAnimating(true);
-    setTimeout(() => {
-      setVisibleProjects(6);
-      setIsAnimating(false);
-    }, 400);
+    setVisibleProjects(6);
     const element = document.getElementById("projects");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -37,29 +29,28 @@ const RecentProjects = () => {
         <span className="text-[var(--accent-purple)]"> recent projects</span>
       </h3>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-16 mt-10">
-        {projects
-          .slice(0, visibleProjects)
-          .map(({ id, title, des, img, iconLists, link }, index) => (
-            <div
-              className={`sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw] transition-opacity duration-500 ease-in-out transform ${
-                isAnimating
-                  ? "opacity-0 translate-y-4"
-                  : "opacity-100 translate-y-0"
-              }`}
+        <AnimatePresence>
+          {projects.slice(0, visibleProjects).map(({ id, title, des, img, iconLists, link }) => (
+            <motion.div
               key={id}
-              style={{
-                transitionDelay: `${index * 100}ms`,
-              }}
+              className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
             >
               <PinContainer title={link} href={link}>
                 <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden h-[30vh] lg:h-[30vh] sm-h[40vh] mb-10">
-                  <img
+                  <motion.img
                     src={img}
                     alt={`Project - ${title}`}
                     className="z-10 absolute bottom-0 object-cover rounded-lg w-full h-full"
                     width="570"
                     height="340"
                     loading="lazy"
+                    initial={{ scale: 0.95 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 0.3 }}
                   />
                 </div>
 
@@ -67,25 +58,20 @@ const RecentProjects = () => {
                   {title}
                 </h4>
 
-                <p
-                  className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
-                  style={{
-                    color: "#BEC1DD",
-                    margin: "1vh 0",
-                  }}
-                >
+                <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2 text-[#BEC1DD] mt-1">
                   {des}
                 </p>
 
                 <div className="flex items-center justify-between mt-7 mb-3">
                   <div className="flex items-center">
                     {iconLists.map((icon, index) => (
-                      <div
+                      <motion.div
                         key={index}
                         className="border border-white/[.2] rounded-full bg-[var(--background-layer)] lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                        style={{
-                          transform: `translateX(-${5 * index + 2}px)`,
-                        }}
+                        style={{ transform: `translateX(-${5 * index + 2}px)` }}
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: index * 0.1 }}
                       >
                         <img
                           src={icon}
@@ -95,7 +81,7 @@ const RecentProjects = () => {
                           height="40"
                           loading="lazy"
                         />
-                      </div>
+                      </motion.div>
                     ))}
                   </div>
 
@@ -112,21 +98,19 @@ const RecentProjects = () => {
                   </a>
                 </div>
               </PinContainer>
-            </div>
+            </motion.div>
           ))}
+        </AnimatePresence>
       </div>
 
+      {/* Load More / Collapse Buttons */}
       <div className="flex justify-center mt-8 gap-4">
         {visibleProjects < projects.length && (
           <button
             onClick={handleLoadMore}
             className="cursor-pointer hover:opacity-80 transition"
           >
-            <MagicButton
-              title="Load More"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
+            <MagicButton title="Load More" icon={<FaLocationArrow />} position="right" />
           </button>
         )}
         {visibleProjects > 6 && (
@@ -134,11 +118,7 @@ const RecentProjects = () => {
             onClick={handleCollapse}
             className="cursor-pointer hover:opacity-80 transition"
           >
-            <MagicButton
-              title="Collapse"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
+            <MagicButton title="Collapse" icon={<FaLocationArrow />} position="right" />
           </button>
         )}
       </div>
