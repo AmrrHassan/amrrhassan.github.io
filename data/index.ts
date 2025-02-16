@@ -222,20 +222,20 @@ export const projects = [
     ],
     link: "#",
   },
-  // {
-  //   "id": 244,
-  //   "title": "Print Sprint",
-  //   "des": "A dynamic company specializing in Branding, Printing, Outdoor Advertising, Digital Marketing, and IT Solutions. Delivering innovative and high-quality services to help businesses stand out.",
-  //   "img": "images/project/printsprint.png",
-  //   "iconLists": [
-  //     "svg/WordPress.svg",
-  //     "svg/MySQL.svg",
-  //     "svg/Apache.svg",
-  //     "svg/PHP.svg",
-  //     "svg/host.svg"
-  //   ],
-  //   "link": "http://printsprint-eg.com"
-  // },
+  {
+    "id": 244,
+    "title": "Print Sprint",
+    "des": "A dynamic company specializing in Branding, Printing, Outdoor Advertising, Digital Marketing, and IT Solutions. Delivering innovative and high-quality services to help businesses stand out.",
+    "img": "images/project/printsprint.png",
+    "iconLists": [
+      "svg/WordPress.svg",
+      "svg/MySQL.svg",
+      "svg/Apache.svg",
+      "svg/PHP.svg",
+      "svg/host.svg"
+    ],
+    "link": "http://printsprint-eg.com"
+  },
   {
     id: 8,
     title: "Iris Aromatherapy",
