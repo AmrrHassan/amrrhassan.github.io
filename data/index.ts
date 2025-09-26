@@ -129,18 +129,18 @@ export const projects = [
     link: "https://vivianmoawad.com",
   },
   {
-    "id": 241,
-    "title": "Zahn Zonen - Germany",
-    "des": "A professional dental clinic in Germany offering high-quality dental care, innovative treatments, and patient-focused services.",
-    "img": "images/project/zahnzone.png",
-    "iconLists": [
+    id: 241,
+    title: "Zahn Zonen - Germany",
+    des: "A professional dental clinic in Germany offering high-quality dental care, innovative treatments, and patient-focused services.",
+    img: "images/project/zahnzone.png",
+    iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
       "svg/Apache.svg",
       "svg/PHP.svg",
-      "svg/host.svg"
+      "svg/host.svg",
     ],
-    "link": "https://zahn-zonen.de"
+    link: "https://zahn-zonen.de",
   },
   {
     id: 25,
@@ -196,18 +196,18 @@ export const projects = [
     link: "https://jellieseg.com",
   },
   {
-    "id": 242,
-    "title": "Emalynn",
-    "des": "An e-commerce platform offering stylish accessories and fashionable clothing, blending quality with the latest trends.",
-    "img": "images/project/emalynn.png",
-    "iconLists": [
+    id: 242,
+    title: "Emalynn",
+    des: "An e-commerce platform offering stylish accessories and fashionable clothing, blending quality with the latest trends.",
+    img: "images/project/emalynn.png",
+    iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
       "svg/Apache.svg",
       "svg/PHP.svg",
-      "svg/host.svg"
+      "svg/host.svg",
     ],
-    "link": "https://emalynn.com"
+    link: "https://emalynn.com",
   },
   {
     id: 27,
@@ -223,18 +223,18 @@ export const projects = [
     link: "#",
   },
   {
-    "id": 244,
-    "title": "Print Sprint",
-    "des": "A dynamic company specializing in Branding, Printing, Outdoor Advertising, Digital Marketing, and IT Solutions. Delivering innovative and high-quality services to help businesses stand out.",
-    "img": "images/project/printsprint.png",
-    "iconLists": [
+    id: 244,
+    title: "Print Sprint",
+    des: "A dynamic company specializing in Branding, Printing, Outdoor Advertising, Digital Marketing, and IT Solutions. Delivering innovative and high-quality services to help businesses stand out.",
+    img: "images/project/printsprint.png",
+    iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
       "svg/Apache.svg",
       "svg/PHP.svg",
-      "svg/host.svg"
+      "svg/host.svg",
     ],
-    "link": "http://printsprint-eg.com"
+    link: "http://printsprint-eg.com",
   },
   {
     id: 8,
@@ -282,18 +282,18 @@ export const projects = [
     link: "https://ak-ships.com",
   },
   {
-    "id": 243,
-    "title": "Rich Land",
-    "des": "A food industry company under Al Monairy Group, specializing in premium food products and ensuring quality through advanced processing and innovation. The website focuses on error fixes and debugging.",
-    "img": "images/project/richland.png",
-    "iconLists": [
+    id: 243,
+    title: "Rich Land",
+    des: "A food industry company under Al Monairy Group, specializing in premium food products and ensuring quality through advanced processing and innovation. The website focuses on error fixes and debugging.",
+    img: "images/project/richland.png",
+    iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
       "svg/Apache.svg",
       "svg/PHP.svg",
-      "svg/host.svg"
+      "svg/host.svg",
     ],
-    "link": "https://richlandfi.com"
+    link: "https://richlandfi.com",
   },
   {
     id: 17,
@@ -631,16 +631,27 @@ export const companies = [
 
 export const workExperience = [
   {
-    "id": 1,
-    "name": "HiTech UAE",
-    "pos": "Full Stack Developer",
-    "title": "Responsible for developing, maintaining, and securing web applications, ensuring scalability and performance. Worked with various frontend and backend technologies, handling infrastructure and deployment. Notable projects include GNC MENA Region, an e-commerce platform for health and wellness products.",
-    "icon": "images/hitech.png",
-    "duration": "Oct 2024 - present",
-    "location": "Remote"
+    id: 1,
+    name: "Nawy",
+    pos: "Software Engineer",
+    title:
+      "Software Engineer responsible for maintaining and developing frontend and backend applications using technologies such as React, Next.js, Node.js, and NestJS. Also mobile applications development using Flutter for cross-platform mobile apps. Ensured scalability, performance, and security across projects.",
+    icon: "images/nawy.png",
+    duration: "June 2025 - present",
+    location: "Hybrid",
   },
   {
     id: 2,
+    name: "HiTech UAE",
+    pos: "Full Stack Developer",
+    title:
+      "Responsible for developing, maintaining, and securing web applications, ensuring scalability and performance. Worked with various frontend and backend technologies, handling infrastructure and deployment. Notable projects include GNC MENA Region, an e-commerce platform for health and wellness products.",
+    icon: "images/hitech.png",
+    duration: "Oct 2024 - June 2025",
+    location: "Remote",
+  },
+  {
+    id: 3,
     name: "IZZY",
     pos: "Web Developer",
     title:
@@ -650,7 +661,7 @@ export const workExperience = [
     location: "Alexandria, Egypt",
   },
   {
-    id: 3,
+    id: 4,
     name: "PrintSprint / Upwork / Mostaql",
     pos: "Web Developer",
     title:
@@ -660,7 +671,7 @@ export const workExperience = [
     location: "Remote",
   },
   {
-    id: 4,
+    id: 5,
     name: "Ceema Films",
     pos: "Web Developer",
     title:
@@ -670,7 +681,7 @@ export const workExperience = [
     location: "Dubai, UAE",
   },
   {
-    id: 5,
+    id: 6,
     name: "Enozom Software",
     pos: "Web Developer | Internship",
     title:
@@ -680,7 +691,7 @@ export const workExperience = [
     location: "Alexandria, Egypt",
   },
   {
-    id: 6,
+    id: 7,
     name: "Innova STEM EDU",
     pos: "Front-End Developer",
     title:
@@ -694,13 +705,13 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    name: 'github',
+    name: "github",
     img: "svg/git.svg",
     link: "https://github.com/AmrrHassan",
   },
   {
     id: 2,
-    name: 'linkedin',
+    name: "linkedin",
     img: "svg/link.svg",
     link: "https://www.linkedin.com/in/amrrhassan/",
   },
