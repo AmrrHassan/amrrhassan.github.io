@@ -638,7 +638,7 @@ export const workExperience = [
       "Software Engineer responsible for maintaining and developing frontend and backend applications using technologies such as React, Next.js, Node.js, and NestJS. Also mobile applications development using Flutter for cross-platform mobile apps. Ensured scalability, performance, and security across projects.",
     icon: "images/nawy.png",
     duration: "June 2025 - present",
-    location: "Hybrid",
+    location: "Cairo, Egypt",
   },
   {
     id: 2,
