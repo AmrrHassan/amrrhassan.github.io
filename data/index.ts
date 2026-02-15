@@ -9,7 +9,8 @@ export const gridItems = [
   {
     id: 4,
     title: "35+ Projects • 100% Client Satisfaction",
-    description: "Delivering innovative solutions across e-commerce, healthcare, and enterprise.",
+    description:
+      "Delivering innovative solutions across e-commerce, healthcare, and enterprise.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -42,7 +43,8 @@ export const gridItemsTwo = [
   {
     id: 1,
     title: "I Prioritize Clear Communication",
-    description: "Building strong partnerships through effective collaboration.",
+    description:
+      "Building strong partnerships through effective collaboration.",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[50vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
@@ -699,41 +701,49 @@ export const companies = [
     id: 1,
     name: "IZZY Apparel",
     img: "images/izzy.png",
-  },
-  {
-    id: 2,
-    name: "Vivian Moawad",
-    img: "images/vivian.png",
-  },
-  {
-    id: 3,
-    name: "Majarrah.",
-    img: "images/majarrah.png",
-  },
-  {
-    id: 4,
-    name: "Jellies",
-    img: "images/jellies.png",
-  },
-  {
-    id: 5,
-    name: "CeemaFilms UAE",
-    img: "images/ceema.png",
-  },
-  {
-    id: 6,
-    name: "Feelgood Socials.",
-    img: "images/feelgood.png",
+    link: "https://www.instagram.com/izzyapparel/?hl=en",
   },
   {
     id: 7,
     name: "Al Monairy Group",
     img: "images/almonairy.png",
+    link: "https://www.linkedin.com/company/al-monairy-holding/",
+  },
+  {
+    id: 2,
+    name: "Vivian Moawad",
+    img: "images/vivian.png",
+    link: "https://www.instagram.com/vivian.moawad/",
+  },
+  {
+    id: 3,
+    name: "Majarrah.",
+    img: "images/majarrah.png",
+    link: "https://www.instagram.com/majarraheg/?hl=en",
   },
   {
     id: 8,
     name: "Zahn Zonen",
     img: "images/zahnzone1.png",
+    link: "https://zahn-zonen.de",
+  },
+  {
+    id: 4,
+    name: "Jellies",
+    img: "images/jellies.png",
+    link: "https://www.instagram.com/jellies_official/?hl=en",
+  },
+  {
+    id: 5,
+    name: "CeemaFilms UAE",
+    img: "images/ceema.png",
+    link: "https://www.instagram.com/ceemafilms/reels/",
+  },
+  {
+    id: 6,
+    name: "GNC MENA",
+    img: "images/gnc-mena.png",
+    link: "https://www.instagram.com/gnc_mena/?hl=en",
   },
 ];
 
@@ -743,9 +753,9 @@ export const workExperience = [
     name: "Nawy",
     pos: "Software Engineer",
     title:
-      "Software Engineer responsible for architecting and maintaining high-performance frontend and backend applications serving 50,000+ monthly active users. Specialized in React, Next.js, Node.js, NestJS, and Flutter development. Implemented scalable microservices architecture, achieving 40% performance improvement and reducing load times by 2.3 seconds. Ensured enterprise-grade security compliance and 99.95% uptime across production environments.",
+      "Helping build and scale applications for 50,000+ users at Nawy. I developed an internal Flutter 'Super App' from scratch to centralize company services for the team. I also led a full-stack project using Node.js and React to integrate Zoom APIs, enabling the tracking and improvement of agent lead calls. My daily work focuses on maintaining reliability using Next.js and NestJS.",
     icon: "images/nawy.png",
-    duration: "June 2025 - present",
+    duration: "May 2025 - present",
     location: "Cairo, Egypt",
   },
   {
@@ -753,7 +763,7 @@ export const workExperience = [
     name: "HiTech UAE",
     pos: "Full Stack Developer",
     title:
-      "Developed, maintained, and secured enterprise web applications, ensuring scalability and optimal performance. Engineered solutions using modern frontend and backend technologies, handling complete infrastructure and deployment pipelines. Successfully delivered GNC MENA Region, a comprehensive e-commerce platform serving 50,000+ monthly users with 99.9% uptime. Implemented advanced security protocols and optimized application performance by 35%.",
+      "Building and maintaining enterprise-grade web applications for diverse international clients. I led the development of the GNC MENA e-commerce platform, managing a user base of 50,000+ every month. My role covered the full project lifecycle—from frontend and backend development to ensuring high-level security and performance.",
     icon: "images/hitech.png",
     duration: "Oct 2024 - June 2025",
     location: "Remote",
@@ -763,7 +773,7 @@ export const workExperience = [
     name: "IZZY",
     pos: "Web Developer",
     title:
-      "Develop and oversee infrastructure, security, and development of the company’s website and application. Flutter app using Clean Architecture principles, unit testing, and integrating Bloc pattern for state management.",
+      "Managing the company’s digital presence across web and mobile platforms. I developed the mobile application using Flutter and the Bloc pattern, focusing on a clean architecture that ensures long-term maintainability and performance.",
     icon: "images/izzy.png",
     duration: "Feb 2021 - present",
     location: "Alexandria, Egypt",
@@ -773,7 +783,7 @@ export const workExperience = [
     name: "PrintSprint / Upwork / Mostaql",
     pos: "Web Developer",
     title:
-      "Architected and delivered custom applications using diverse tech stacks tailored to client requirements. Successfully completed over 50+ projects across e-commerce, healthcare, and corporate sectors with a 100% client satisfaction rate. Specialized in rapid prototyping and deployment, consistently meeting tight deadlines while maintaining code quality and security standards.",
+      "Successfully delivered over 50 projects for clients across the e-commerce, healthcare, and corporate sectors. I specialize in turning product ideas into functional realities quickly, managing everything from initial development to production deployment.",
     icon: "images/upwork.png",
     duration: "Jan 2021 - Present",
     location: "Remote",
@@ -783,7 +793,7 @@ export const workExperience = [
     name: "Ceema Films",
     pos: "Web Developer",
     title:
-      "Develop and oversee infrastructure, security, and development of the company’s website, Unit testing, SEO Optimizaiton.",
+      "Overseeing the technical infrastructure and performance of the company website. I focus on maintaining security, optimizing for SEO, and ensuring regular updates and testing to keep the platform reliable.",
     icon: "images/ceema.png",
     duration: "Oct 2023 - July 2024",
     location: "Dubai, UAE",
@@ -803,7 +813,7 @@ export const workExperience = [
     name: "Innova STEM EDU",
     pos: "Front-End Developer",
     title:
-      "Enhanced website functionality through developing, modifying, and debugging features.",
+      "Improved the educational platform's functionality by developing new features and resolving technical issues to enhance the overall experience for students.",
     icon: "images/inoova.png",
     duration: "Aug 2021 - July 2022",
     location: "Alexandria, Egypt",
