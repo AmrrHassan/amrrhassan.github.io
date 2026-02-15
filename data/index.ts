@@ -8,8 +8,8 @@ export const navItems = [
 export const gridItems = [
   {
     id: 4,
-    title: "35+ Projects Delivered with 100% Client Satisfaction",
-    description: "I'm passionate about solving complex challenges across e-commerce, healthcare, and enterprise using cutting-edge technologies.",
+    title: "35+ Projects • 100% Client Satisfaction",
+    description: "Delivering innovative solutions across e-commerce, healthcare, and enterprise.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
