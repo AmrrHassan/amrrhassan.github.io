@@ -8,6 +8,8 @@ import Approach from "@/components/Approach";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WorkExperience from "@/components/WorkExperience";
+import FAQ from "@/components/FAQ";
+import SEOSchemas from "@/components/SEOSchemas";
 
 import dynamic from 'next/dynamic';
 
@@ -21,6 +23,7 @@ const Grid = dynamic(() => import('@/components/Grid'), {
 export default function Home() {
   return (
     <main className="relative dark:bg-black-100 light:bg[#f0f0f0] flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
+      <SEOSchemas />
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
         <Hero />
@@ -30,6 +33,7 @@ export default function Home() {
         <Grid divID="" gridItems={gridItemsTwo} />
         <Approach />
         <WorkExperience />
+        <FAQ />
         <Contact />
         <Footer />
       </div>
