@@ -30,7 +30,7 @@ export const getPersonSchema = () => ({
   "address": {
     "@type": "PostalAddress",
     "addressCountry": "EG",
-    "addressRegion": "Alexandria"
+    "addressRegion": "Cairo"
   }
 });
 
@@ -151,7 +151,7 @@ export const getFAQPageSchema = () => ({
       "name": "Where is Amr Hassan located and which regions does he serve?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Amr Hassan is based in Alexandria, Egypt, and works with clients globally. He has successfully delivered projects across the Middle East (Egypt, UAE, Saudi Arabia) and Europe (Germany). He is fully equipped for remote collaboration and flexible with time zones, making it easy to work with international teams."
+        "text": "Amr Hassan is based in Cairo, Egypt, and works with clients globally. He has successfully delivered projects across the Middle East (Egypt, UAE, Saudi Arabia) and Europe (Germany). He is fully equipped for remote collaboration and flexible with time zones, making it easy to work with international teams."
       }
     },
     {

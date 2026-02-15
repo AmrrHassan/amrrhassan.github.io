@@ -1,22 +1,23 @@
 import { workExperience } from "@/data";
 import React from "react";
 import { TechCard } from "./ui/TechCard";
+import { ProfilePixelCard } from "./ProfilePixelCard";
 
 const WorkExperience = () => {
   return (
     <section className="my-10" id="work">
-      <div className="relative min-h-screen flex items-center justify-center flex-col">
+      <div className="relative min-h-screen flex items-center justify-center flex-col px-6 sm:px-12">
         {/* Main Section Heading */}
         <h3 className="heading font-bold justify-center text-center">
           My work <span className="text-[var(--accent-purple)]">experience</span>
         </h3>
 
-        <div className="work-container my-10">
-          <div className="work-card px-6 sm:px-0">
-            <TechCard />
+        <div className="work-container my-10 px-0">
+          <div className="work-card px-0">
+            <TechCard className="max-w-full" />
           </div>
 
-          <div className="work-content sm:grid-cols-1 md:grid-cols-1 px-4">
+          <div className="work-content px-0 lg:col-start-2 lg:row-start-1 lg:row-span-2">
             <div className="sm:py-10 py-5 sm:px-5 px-2.5">
               {workExperience.map(
                 ({ id, name, title, pos, duration, icon, location }) => (
@@ -57,6 +58,11 @@ const WorkExperience = () => {
                 )
               )}
             </div>
+          </div>
+
+
+          <div className="lg:col-start-1 lg:row-start-2 px-0 order-last lg:order-none">
+            <ProfilePixelCard />
           </div>
         </div>
       </div>

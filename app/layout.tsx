@@ -181,10 +181,10 @@ export default function RootLayout({
         {/* Additional SEO Meta Tags */}
         <meta name="keywords" content="full-stack developer, React developer, Next.js expert, TypeScript developer, Node.js engineer, Flutter developer, web development Egypt, mobile app development, e-commerce solutions, healthcare technology, Amr Hassan, portfolio, software engineer" />
         <meta name="author" content="Amr Hassan Hafez" />
-        <meta name="geo.region" content="EG-ALX" />
-        <meta name="geo.placename" content="Alexandria" />
-        <meta name="geo.position" content="31.2001;29.9187" />
-        <meta name="ICBM" content="31.2001, 29.9187" />
+        <meta name="geo.region" content="EG-C" />
+        <meta name="geo.placename" content="Cairo" />
+        <meta name="geo.position" content="30.0444;31.2357" />
+        <meta name="ICBM" content="30.0444, 31.2357" />
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>

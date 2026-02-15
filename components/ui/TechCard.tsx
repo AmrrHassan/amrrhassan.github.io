@@ -5,9 +5,9 @@ import { cn } from "@/utils/cn";
 import { GoCopilot } from "react-icons/go";
 import { SiReact, SiFlutter, SiNextdotjs, SiNodedotjs, SiThreedotjs } from "react-icons/si";
 
-export function TechCard() {
+export function TechCard({ className }: { className?: string }) {
   return (
-    <Card>
+    <Card className={className}>
       <CardSkeletonContainer>
         <Skeleton />
       </CardSkeletonContainer>
