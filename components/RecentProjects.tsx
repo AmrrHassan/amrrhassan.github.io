@@ -41,17 +41,23 @@ const RecentProjects = () => {
             >
               <PinContainer title={link} href={link}>
                 <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden h-[30vh] lg:h-[30vh] sm-h[40vh] mb-10">
-                  <motion.img
-                    src={img}
-                    alt={`Project - ${title}`}
-                    className="z-10 absolute bottom-0 object-cover rounded-lg w-full h-full"
-                    width="570"
-                    height="340"
-                    loading="lazy"
-                    initial={{ scale: 0.95 }}
-                    animate={{ scale: 1 }}
-                    transition={{ duration: 0.3 }}
-                  />
+                  <picture>
+                    <source
+                      srcSet={img.replace(/\.(png|jpg|jpeg)$/i, '.webp')}
+                      type="image/webp"
+                    />
+                    <motion.img
+                      src={img}
+                      alt={`Project - ${title}`}
+                      className="z-10 absolute bottom-0 object-cover rounded-lg w-full h-full"
+                      width="570"
+                      height="340"
+                      loading="lazy"
+                      initial={{ scale: 0.95 }}
+                      animate={{ scale: 1 }}
+                      transition={{ duration: 0.3 }}
+                    />
+                  </picture>
                 </div>
 
                 <h4 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">

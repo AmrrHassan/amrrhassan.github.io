@@ -4,20 +4,36 @@ import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems, gridItems, gridItemsTwo } from "@/data";
 
 import Clients from "@/components/Clients";
-import Approach from "@/components/Approach";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import WorkExperience from "@/components/WorkExperience";
-import FAQ from "@/components/FAQ";
 import SEOSchemas from "@/components/SEOSchemas";
 
 import dynamic from 'next/dynamic';
 
+// Lazy load heavy components to reduce initial bundle size
 const RecentProjects = dynamic(() => import('@/components/RecentProjects'), {
   ssr: false,
 });
 const Grid = dynamic(() => import('@/components/Grid'), {
   ssr: false,
+});
+const Approach = dynamic(() => import('@/components/Approach'), {
+  ssr: false,
+  loading: () => <div className="h-screen" />
+});
+const WorkExperience = dynamic(() => import('@/components/WorkExperience'), {
+  ssr: false,
+  loading: () => <div className="min-h-[50vh]" />
+});
+const FAQ = dynamic(() => import('@/components/FAQ'), {
+  ssr: false,
+  loading: () => <div className="min-h-[40vh]" />
+});
+const Contact = dynamic(() => import('@/components/Contact'), {
+  ssr: false,
+  loading: () => <div className="min-h-[60vh]" />
+});
+const Footer = dynamic(() => import('@/components/Footer'), {
+  ssr: false,
+  loading: () => <div className="min-h-[20vh]" />
 });
 
 export default function Home() {
