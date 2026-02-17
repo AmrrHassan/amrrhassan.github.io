@@ -49,7 +49,7 @@ const RecentProjects = () => {
                     <motion.img
                       src={img}
                       alt={`Project - ${title}`}
-                      className="z-10 absolute bottom-0 object-cover rounded-lg w-full h-full"
+                      className="z-10 absolute inset-0 object-cover object-center rounded-lg w-full h-full"
                       width="570"
                       height="340"
                       loading="lazy"
