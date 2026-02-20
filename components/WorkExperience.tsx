@@ -13,13 +13,13 @@ const WorkExperience = () => {
           My work <span className="text-[var(--accent-purple)]">experience</span>
         </h3>
 
-        <div className="work-container my-10 px-0">
+        <div className="work-container w-full my-10 px-0">
           <div className="work-card px-0">
             <TechCard className="max-w-full" />
           </div>
 
           <div className="work-content px-0 lg:col-start-2 lg:row-start-1 lg:row-span-2">
-            <div className="sm:py-10 py-5 sm:px-5 px-2.5">
+            <div className="sm:py-10 py-5 sm:px-5 px-0">
               {workExperience.map(
                 ({ id, name, title, pos, duration, icon, location }) => (
                   <article key={id} className="work-content_container group">
