@@ -61,7 +61,7 @@ const FAQ = () => {
               key={index}
               className="group bg-black-100/50 backdrop-blur-sm rounded-xl border border-white/[0.05] overflow-hidden transition-all duration-300 hover:border-white/[0.1] hover:bg-black-100"
             >
-              <summary className="list-none flex items-start gap-4 p-6 cursor-pointer select-none">
+              <summary className="list-none flex items-start gap-4 p-6 select-none">
                 <span className="mt-1 flex-shrink-0 transition-transform duration-300 group-open:rotate-180">
                   <svg
                     className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors"

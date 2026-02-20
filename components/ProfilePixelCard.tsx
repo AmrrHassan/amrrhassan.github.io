@@ -26,6 +26,7 @@ export function ProfilePixelCard() {
                     sampleAverage
                     tintColor="#CBACF9"
                     tintStrength={0.15}
+                    responsive
                     className="rounded-xl w-full h-full object-cover"
                 />
             </CardSkeletonContainer>

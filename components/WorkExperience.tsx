@@ -13,17 +13,17 @@ const WorkExperience = () => {
           My work <span className="text-[var(--accent-purple)]">experience</span>
         </h3>
 
-        <div className="work-container w-full my-10 px-0">
-          <div className="work-card px-0">
+        <div className="work-container max-w-full my-10 px-0">
+          <div className="work-card px-0 min-w-0">
             <TechCard className="max-w-full" />
           </div>
 
-          <div className="work-content px-0 lg:col-start-2 lg:row-start-1 lg:row-span-2">
-            <div className="sm:py-10 py-5 sm:px-5 px-0">
+          <div className="work-content px-0 lg:col-start-2 lg:row-start-1 lg:row-span-2 min-w-0">
+            <div className="sm:py-10 py-5">
               {workExperience.map(
                 ({ id, name, title, pos, duration, icon, location }) => (
                   <article key={id} className="work-content_container group">
-                    <div className="flex flex-col h-full w-full justify-start items-center py-2">
+                    <div className="flex flex-col h-full justify-start items-center py-2">
                       {/* Company Logo with optimized alt & dimensions */}
                       <div className="work-content_logo">
                         <Image
@@ -37,7 +37,7 @@ const WorkExperience = () => {
                       <div className="work-content_bar" />
                     </div>
 
-                    <div className="sm:p-5 px-2.5 py-5">
+                    <div className="sm:p-5 px-2.5 py-5 min-w-0">
                       {/* Company Name as an H2 for SEO hierarchy */}
                       <h2 className="font-bold text-[var(--secondary)]">{name}</h2>
 
@@ -61,7 +61,7 @@ const WorkExperience = () => {
           </div>
 
 
-          <div className="lg:col-start-1 lg:row-start-2 px-0 order-last lg:order-none">
+          <div className="lg:col-start-1 lg:row-start-2 px-0 order-last lg:order-none min-w-0">
             <ProfilePixelCard />
           </div>
         </div>
