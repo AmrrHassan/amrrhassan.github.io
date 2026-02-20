@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
@@ -41,23 +42,20 @@ const RecentProjects = () => {
             >
               <PinContainer title={link} href={link}>
                 <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden h-[30vh] lg:h-[30vh] sm-h[40vh] mb-10">
-                  <picture>
-                    <source
-                      srcSet={img.replace(/\.(png|jpg|jpeg)$/i, '.webp')}
-                      type="image/webp"
-                    />
-                    <motion.img
+                  <motion.div
+                    className="w-full h-full absolute inset-0 z-10"
+                    initial={{ scale: 0.95 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <Image
                       src={img}
                       alt={`Project - ${title}`}
-                      className="z-10 absolute inset-0 object-cover object-center rounded-lg w-full h-full"
-                      width="570"
-                      height="340"
-                      loading="lazy"
-                      initial={{ scale: 0.95 }}
-                      animate={{ scale: 1 }}
-                      transition={{ duration: 0.3 }}
+                      className="object-cover object-center rounded-lg w-full h-full"
+                      width={570}
+                      height={340}
                     />
-                  </picture>
+                  </motion.div>
                 </div>
 
                 <h4 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
@@ -79,13 +77,12 @@ const RecentProjects = () => {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: index * 0.1 }}
                       >
-                        <img
+                        <Image
                           src={icon}
                           alt={`Tech Icon ${index + 1}`}
                           className="p-2"
-                          width="40"
-                          height="40"
-                          loading="lazy"
+                          width={40}
+                          height={40}
                         />
                       </motion.div>
                     ))}

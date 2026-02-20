@@ -1,5 +1,6 @@
 'use client';
 import { cn } from "@/utils/cn";
+import Image from "next/image";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
 import { useState } from "react";
@@ -78,13 +79,12 @@ export const BentoGridItem = ({
       <div className={`${id === 6 ? "flex justify-center" : ""} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
-            <img
+            <Image
               src={img}
               alt={title ? String(title) : "Portfolio Image"}
               className={cn(imgClassName, "object-cover object-center")}
-              width="400" // Set a reasonable width
-              height="250" // Set a reasonable height
-              loading="lazy"
+              width={400} // Set a reasonable width
+              height={250} // Set a reasonable height
             />
           )}
         </div>
@@ -94,13 +94,12 @@ export const BentoGridItem = ({
             }`}
         >
           {spareImg && (
-            <img
+            <Image
               src={spareImg}
               alt={`Additional graphic for ${title ? String(title) : "Portfolio Item"}`}
               className="object-cover object-center w-full h-auto"
-              width="200"
-              height="100"
-              loading="lazy"
+              width={200}
+              height={100}
             />
           )}
         </div>
@@ -160,7 +159,7 @@ export const BentoGridItem = ({
               <div className="absolute -bottom-5 right-0">
                 <Lottie
                   options={{
-                    loop: copied,
+                    loop: false,
                     autoplay: copied,
                     animationData,
                     rendererSettings: {

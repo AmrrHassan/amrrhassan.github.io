@@ -1,5 +1,6 @@
 "use client";
 import React, { useRef, useState } from "react";
+import Image from "next/image";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -59,11 +60,12 @@ const Contact = () => {
     <section className="relative min-h-screen flex items-center justify-center py-12" id="contact">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img
-          src="/images/terminalTwo.png"
+        <Image
+          src="/images/terminalTwo.webp"
           alt="terminal-background"
           className="w-full h-full object-contain md:object-contain"
-          width="500" height="500"
+          width={500}
+          height={500}
         />
         <div className="absolute inset-0"></div> {/* Overlay for better readability */}
       </div>

@@ -48,7 +48,7 @@ export const gridItemsTwo = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[50vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "images/laptop2.jpg",
+    img: "images/laptop2.webp",
     spareImg: "",
   },
   {
@@ -78,7 +78,7 @@ export const projects = [
     id: 105,
     title: "Rich Wings",
     des: "Engineered a comprehensive e-commerce platform for Rich Wings, a subsidiary of Al Monairy Holding. Implemented with React, Next.js, and TypeScript, delivering innovative packaging solutions and streamlining global trade operations with 99.9% uptime.",
-    img: "images/project/richwings.png",
+    img: "images/project/richwings.webp",
     iconLists: [
       "svg/React.svg",
       "svg/next.svg",
@@ -91,7 +91,7 @@ export const projects = [
     id: 106,
     title: "Al Nada",
     des: "Part of Al Monairy Holding, Al Nada Mills specialized in premium wheat flour production with a legacy of excellence since 1998.",
-    img: "images/project/alnada.png",
+    img: "images/project/alnada.webp",
     iconLists: [
       "svg/React.svg",
       "svg/next.svg",
@@ -104,7 +104,7 @@ export const projects = [
     id: 107,
     title: "Smart Wins",
     des: "Delivering FDA-compliant Egyptian food ingredients and packaging solutions to the U.S. market, supported by Al Monairy Holding.",
-    img: "images/project/smartwins.png",
+    img: "images/project/smartwins.webp",
     iconLists: [
       "svg/React.svg",
       "svg/next.svg",
@@ -117,7 +117,7 @@ export const projects = [
     id: 108,
     title: "Richland",
     des: "A dedicated food industry company under Al Monairy Holding, focused on premium canned fruits, vegetables, and pickles from farm to shelf.",
-    img: "images/project/richland.png",
+    img: "images/project/richland.webp",
     iconLists: [
       "svg/React.svg",
       "svg/next.svg",
@@ -130,7 +130,7 @@ export const projects = [
     id: 109,
     title: "Almonairy Corn",
     des: "A leader in corn-based food and industrial ingredients, producing starch, glucose, and oils with advanced technologies.",
-    img: "images/project/almonairycorn.png",
+    img: "images/project/almonairycorn.webp",
     iconLists: [
       "svg/React.svg",
       "svg/next.svg",
@@ -143,7 +143,7 @@ export const projects = [
     id: 110,
     title: "Alex I Care",
     des: "Architected a Flutter-based mobile application for comprehensive eye care services, featuring a modern UI with 95+ Lighthouse performance score. Integrated real-time appointment booking and patient management with seamless API communications, achieving 4.8+ star ratings on both iOS and Android platforms.",
-    img: "images/project/alexicare.jpg",
+    img: "images/project/alexicare.webp",
     iconLists: ["svg/Flutter.svg", "svg/Dart.svg", "svg/Firebase.svg"],
     link: "https://apps.apple.com/us/app/icare-alex/id6474906063",
   },
@@ -151,7 +151,7 @@ export const projects = [
     id: 104,
     title: "Nairmed",
     des: "A modern medical and healthcare platform Providing high-quality medical equipment and healthcare solutions.",
-    img: "images/project/nairmed.png",
+    img: "images/project/nairmed.webp",
     iconLists: [
       "svg/React.svg",
       "svg/next.svg",
@@ -164,7 +164,7 @@ export const projects = [
     id: 23,
     title: "Majarrah Mall",
     des: "A mall in Egypt offering a wide range of retail and entertainment experiences.",
-    img: "images/project/Majarrah.png",
+    img: "images/project/Majarrah.webp",
     iconLists: [
       "svg/React.svg",
       "svg/next.svg",
@@ -178,7 +178,7 @@ export const projects = [
     id: 24,
     title: "Vivian Moawad",
     des: "An haute couture company offering bespoke fashion designs and collections.",
-    img: "images/project/viviantwo.gif",
+    img: "images/project/viviantwo.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -193,7 +193,7 @@ export const projects = [
     id: 241,
     title: "Zahn Zonen - Germany",
     des: "A professional dental clinic in Germany offering high-quality dental care, innovative treatments, and patient-focused services.",
-    img: "images/project/zahnzone.png",
+    img: "images/project/zahnzone.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -207,7 +207,7 @@ export const projects = [
     id: 41,
     title: "ZZ Training App",
     des: "A comprehensive fitness training app designed for trainers and users, featuring personalized workout plans, progress tracking, and interactive training sessions.",
-    img: "images/project/izzyapp.png",
+    img: "images/project/izzyapp.webp",
     iconLists: [
       "svg/Flutter.svg",
       "svg/Firebase.svg",
@@ -220,7 +220,7 @@ export const projects = [
     id: 4,
     title: "AlaFein App",
     des: "A mobile app for cultural events, offering event discovery and ticket booking services.",
-    img: "images/project/Alafein.png",
+    img: "images/project/Alafein.webp",
     iconLists: [
       "svg/Flutter.svg",
       "svg/Firebase.svg",
@@ -235,7 +235,7 @@ export const projects = [
     id: 102,
     title: "Cairo Fitness Expo",
     des: "Developed the digital platform for Egypt's premier fitness event, connecting 10,000+ athletes, brands, and fitness enthusiasts through a high-performance web experience. Built with React, Next.js, and TypeScript, achieving sub-2-second load times and seamless event registration.",
-    img: "images/project/cairofitnesss.png",
+    img: "images/project/cairofitnesss.webp",
     iconLists: [
       "svg/React.svg",
       "svg/next.svg",
@@ -248,7 +248,7 @@ export const projects = [
     id: 103,
     title: "GNC MENA",
     des: "Implemented a robust Shopify-based e-commerce platform serving the Middle East and North Africa region with 50,000+ monthly users. Optimized product catalog management, integrated secure payment gateways, and achieved 40% improvement in page load performance for health and wellness products.",
-    img: "images/project/gnc.png",
+    img: "images/project/gnc.webp",
     iconLists: ["svg/JavaScript.svg", "svg/host.svg"],
     link: "https://gnc-mena.com/",
   },
@@ -256,7 +256,7 @@ export const projects = [
     id: 25,
     title: "Feelgood Socials",
     des: "A social platform for organizing and booking events, parties, and social gatherings.",
-    img: "images/project/Feelgood Socials.png",
+    img: "images/project/Feelgood Socials.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -271,7 +271,7 @@ export const projects = [
     id: 5,
     title: "Innova STEM Education",
     des: "A learning management system offering online courses and training programs.",
-    img: "images/project/Innova.png",
+    img: "images/project/Innova.webp",
     iconLists: [
       "svg/React.svg",
       "svg/next.svg",
@@ -286,7 +286,7 @@ export const projects = [
     id: 101,
     title: "Optechme",
     des: "A leading technology solutions provider specializing in hardware, software, and integrated IT services for various business sectors.",
-    img: "images/project/optechme.png",
+    img: "images/project/optechme.webp",
     iconLists: [
       "svg/React.svg",
       "svg/next.svg",
@@ -300,7 +300,7 @@ export const projects = [
     id: 2,
     title: "IZZY Sportswear",
     des: "An e-commerce platform for sportswear, offering a wide range of fitness apparel.",
-    img: "images/project/IZZY.png",
+    img: "images/project/IZZY.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -315,7 +315,7 @@ export const projects = [
     id: 14,
     title: "Jellies",
     des: "An e-commerce platform for jelly-based products built with Shopify.",
-    img: "images/project/Jellies.png",
+    img: "images/project/Jellies.webp",
     iconLists: ["svg/Ruby.svg", "svg/JavaScript.svg"],
     link: "https://jellieseg.com",
   },
@@ -323,7 +323,7 @@ export const projects = [
     id: 242,
     title: "Emalynn",
     des: "An e-commerce platform offering stylish accessories and fashionable clothing, blending quality with the latest trends.",
-    img: "images/project/emalynn.png",
+    img: "images/project/emalynn.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -337,7 +337,7 @@ export const projects = [
     id: 27,
     title: "Wedding Invitations Website",
     des: "Custom Wedding Invitation with 3D interactions.",
-    img: "images/project/wedding.gif",
+    img: "images/project/wedding.webp",
     iconLists: [
       "svg/three.svg",
       "svg/Webpack.svg",
@@ -350,7 +350,7 @@ export const projects = [
     id: 244,
     title: "Print Sprint",
     des: "A dynamic company specializing in Branding, Printing, Outdoor Advertising, Digital Marketing, and IT Solutions. Delivering innovative and high-quality services to help businesses stand out.",
-    img: "images/project/printsprint.png",
+    img: "images/project/printsprint.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -364,7 +364,7 @@ export const projects = [
     id: 8,
     title: "Iris Aromatherapy",
     des: "An e-commerce platform for aromatherapy products, promoting relaxation and wellness.",
-    img: "images/project/Iris.png",
+    img: "images/project/Iris.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -380,7 +380,7 @@ export const projects = [
     id: 7,
     title: "AlexMark",
     des: "A plastic manufacturing company specializing in high-quality plastic products.",
-    img: "images/project/AlexMark.png",
+    img: "images/project/AlexMark.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -395,7 +395,7 @@ export const projects = [
     id: 1,
     title: "AK Ships",
     des: "An import-export company providing global shipping and logistics services.",
-    img: "images/project/AK Ships.png",
+    img: "images/project/AK Ships.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -409,7 +409,7 @@ export const projects = [
     id: 17,
     title: "Jollydar",
     des: "An e-commerce platform for high-end furniture, offering modern and luxurious designs.",
-    img: "images/project/Jollydar.png",
+    img: "images/project/Jollydar.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -423,7 +423,7 @@ export const projects = [
     id: 10,
     title: "Alkhalaf Contracting",
     des: "A contracting company in Saudi Arabia, offering infrastructure and building solutions.",
-    img: "images/project/Alkhalaf.png",
+    img: "images/project/Alkhalaf.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -437,7 +437,7 @@ export const projects = [
     id: 18,
     title: "Tenniscape",
     des: "A tennis and squash booking platform, offering court reservations and event management.",
-    img: "images/project/Tenniscape.png",
+    img: "images/project/Tenniscape.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -451,7 +451,7 @@ export const projects = [
     id: 19,
     title: "EverTrade",
     des: "An import-export company facilitating global trade in various industries.",
-    img: "images/project/EverTrade.png",
+    img: "images/project/EverTrade.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -466,7 +466,7 @@ export const projects = [
     id: 13,
     title: "Capella",
     des: "An e-commerce platform offering a wide range of consumer products.",
-    img: "images/project/Capella.png",
+    img: "images/project/Capella.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -481,7 +481,7 @@ export const projects = [
     id: 15,
     title: "Spire Pharma",
     des: "A pharmaceuticals e-commerce platform offering a wide range of health products.",
-    img: "images/project/SpirePharma.png",
+    img: "images/project/SpirePharma.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -495,7 +495,7 @@ export const projects = [
     id: 28,
     title: "Fruitalita",
     des: "An import-export company specializing in fresh fruits and produce.",
-    img: "images/project/Fruitalita.png",
+    img: "images/project/Fruitalita.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -510,7 +510,7 @@ export const projects = [
     id: 12,
     title: "Senno Factory",
     des: "A manufacturing company specializing in high-tech equipment and industrial solutions.",
-    img: "images/project/Senno.png",
+    img: "images/project/Senno.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -525,7 +525,7 @@ export const projects = [
     id: 20,
     title: "KIKS",
     des: "An e-commerce platform for fashion and lifestyle products.",
-    img: "images/project/KIKS.png",
+    img: "images/project/KIKS.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -540,7 +540,7 @@ export const projects = [
     id: 29,
     title: "Norway Freight",
     des: "An import-export company specializing in goods from Norway to the global market.",
-    img: "images/project/Norway.png",
+    img: "images/project/Norway.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -555,7 +555,7 @@ export const projects = [
     id: 11,
     title: "Jeem Gym App",
     des: "A gym in Saudi Arabia with a mobile app for membership management and class bookings.",
-    img: "images/project/JeemGymApp.png",
+    img: "images/project/JeemGymApp.webp",
     iconLists: ["svg/Swift.svg", "svg/Kotlin.svg", "svg/MySQL.svg"],
     link: "https://gym.sa",
   },
@@ -563,7 +563,7 @@ export const projects = [
     id: 40,
     title: "Jeem Gym",
     des: "A gym in Saudi Arabia with a mobile app for membership management and class bookings.",
-    img: "images/project/JeemGym.png",
+    img: "images/project/JeemGym.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -577,7 +577,7 @@ export const projects = [
     id: 31,
     title: "Piranha",
     des: "An e-commerce platform offering swimwear and related accessories for swimmers.",
-    img: "images/project/Piranha.png",
+    img: "images/project/Piranha.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -591,7 +591,7 @@ export const projects = [
     id: 26,
     title: "Miemar Real Estate",
     des: "A real estate company in Saudi Arabia offering property management and sales services.",
-    img: "images/project/Miemar.png",
+    img: "images/project/Miemar.webp",
     iconLists: [
       "svg/Webpack.svg",
       "svg/WordPress.svg",
@@ -607,7 +607,7 @@ export const projects = [
     id: 6,
     title: "Pulse ICT",
     des: "A software company based in Saudi Arabia, offering a range of IT services and solutions.",
-    img: "images/project/PulseICT.png",
+    img: "images/project/PulseICT.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -622,7 +622,7 @@ export const projects = [
     id: 9,
     title: "Qatar Legal Services",
     des: "Qatar Legal Services, offering online legal consulting and document processing services.",
-    img: "images/project/QLS.png",
+    img: "images/project/QLS.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -636,7 +636,7 @@ export const projects = [
     id: 3,
     title: "Premium Exports",
     des: "A leading import-export company specializing in premium goods across multiple industries.",
-    img: "images/project/PremiumExports.png",
+    img: "images/project/PremiumExports.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -651,7 +651,7 @@ export const projects = [
     id: 16,
     title: "Efficiencies KSA",
     des: "A business services company in Saudi Arabia, providing consulting and operational solutions.",
-    img: "images/project/Efficiencies.png",
+    img: "images/project/Efficiencies.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -667,7 +667,7 @@ export const projects = [
     id: 21,
     title: "The Factory",
     des: "A bakery company offering a wide range of fresh baked goods through their e-commerce platform.",
-    img: "images/project/The Factory.png",
+    img: "images/project/The Factory.webp",
     iconLists: [
       "svg/WordPress.svg",
       "svg/MySQL.svg",
@@ -682,7 +682,7 @@ export const projects = [
     id: 30,
     title: "Honeyland KSA",
     des: "An e-commerce platform offering a range of honey products from Saudi Arabia.",
-    img: "images/project/Honeylandsa.png",
+    img: "images/project/Honeylandsa.webp",
     iconLists: [
       "svg/React.svg",
       "svg/next.svg",
@@ -700,49 +700,49 @@ export const companies = [
   {
     id: 1,
     name: "IZZY Apparel",
-    img: "images/izzy.png",
+    img: "images/izzy.webp",
     link: "https://www.instagram.com/izzyapparel/?hl=en",
   },
   {
     id: 7,
     name: "Al Monairy Group",
-    img: "images/almonairy.png",
+    img: "images/almonairy.webp",
     link: "https://www.linkedin.com/company/al-monairy-holding/",
   },
   {
     id: 2,
     name: "Vivian Moawad",
-    img: "images/vivian.png",
+    img: "images/vivian.webp",
     link: "https://www.instagram.com/vivian.moawad/",
   },
   {
     id: 3,
     name: "Majarrah.",
-    img: "images/majarrah.png",
+    img: "images/majarrah.webp",
     link: "https://www.instagram.com/majarraheg/?hl=en",
   },
   {
     id: 8,
     name: "Zahn Zonen",
-    img: "images/zahnzone1.png",
+    img: "images/zahnzone1.webp",
     link: "https://zahn-zonen.de",
   },
   {
     id: 4,
     name: "Jellies",
-    img: "images/jellies.png",
+    img: "images/jellies.webp",
     link: "https://www.instagram.com/jellies_official/?hl=en",
   },
   {
     id: 5,
     name: "CeemaFilms UAE",
-    img: "images/ceema.png",
+    img: "images/ceema.webp",
     link: "https://www.instagram.com/ceemafilms/reels/",
   },
   {
     id: 6,
     name: "GNC MENA",
-    img: "images/gnc-mena.png",
+    img: "images/gnc-mena.webp",
     link: "https://www.instagram.com/gnc_mena/?hl=en",
   },
 ];
@@ -754,7 +754,7 @@ export const workExperience = [
     pos: "Software Engineer",
     title:
       "Helping build and scale applications for 50,000+ users at Nawy. I developed an internal Flutter 'Super App' from scratch to centralize company services for the team. I also led a full-stack project using Node.js and React to integrate Zoom APIs, enabling the tracking and improvement of agent lead calls. My daily work focuses on maintaining reliability using Next.js and NestJS.",
-    icon: "images/nawy.png",
+    icon: "images/nawy.webp",
     duration: "May 2025 - present",
     location: "Cairo, Egypt",
   },
@@ -764,7 +764,7 @@ export const workExperience = [
     pos: "Full Stack Developer",
     title:
       "Building and maintaining enterprise-grade web applications for diverse international clients. I led the development of the GNC MENA e-commerce platform, managing a user base of 50,000+ every month. My role covered the full project lifecycle—from frontend and backend development to ensuring high-level security and performance.",
-    icon: "images/hitech.png",
+    icon: "images/hitech.webp",
     duration: "Oct 2024 - June 2025",
     location: "Remote",
   },
@@ -774,7 +774,7 @@ export const workExperience = [
     pos: "Web Developer",
     title:
       "Managing the company’s digital presence across web and mobile platforms. I developed the mobile application using Flutter and the Bloc pattern, focusing on a clean architecture that ensures long-term maintainability and performance.",
-    icon: "images/izzy.png",
+    icon: "images/izzy.webp",
     duration: "Feb 2021 - present",
     location: "Alexandria, Egypt",
   },
@@ -784,7 +784,7 @@ export const workExperience = [
     pos: "Web Developer",
     title:
       "Successfully delivered over 50 projects for clients across the e-commerce, healthcare, and corporate sectors. I specialize in turning product ideas into functional realities quickly, managing everything from initial development to production deployment.",
-    icon: "images/upwork.png",
+    icon: "images/upwork.webp",
     duration: "Jan 2021 - Present",
     location: "Remote",
   },
@@ -794,7 +794,7 @@ export const workExperience = [
     pos: "Web Developer",
     title:
       "Overseeing the technical infrastructure and performance of the company website. I focus on maintaining security, optimizing for SEO, and ensuring regular updates and testing to keep the platform reliable.",
-    icon: "images/ceema.png",
+    icon: "images/ceema.webp",
     duration: "Oct 2023 - July 2024",
     location: "Dubai, UAE",
   },
@@ -804,7 +804,7 @@ export const workExperience = [
     pos: "Web Developer | Internship",
     title:
       "Collaborated with a team of developers on a project using ReactJS for frontend and NodeJS for backend. Received mentorship and guidance from experienced developers, enhancing technical skills.",
-    icon: "images/enozom.png",
+    icon: "images/enozom.webp",
     duration: "July 2023 - Aug 2023",
     location: "Alexandria, Egypt",
   },
@@ -814,7 +814,7 @@ export const workExperience = [
     pos: "Front-End Developer",
     title:
       "Improved the educational platform's functionality by developing new features and resolving technical issues to enhance the overall experience for students.",
-    icon: "images/inoova.png",
+    icon: "images/inoova.webp",
     duration: "Aug 2021 - July 2022",
     location: "Alexandria, Egypt",
   },

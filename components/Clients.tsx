@@ -1,5 +1,6 @@
 import { companies } from "@/data";
 import React from "react";
+import Image from "next/image";
 
 const Clients = () => {
   return (
@@ -18,13 +19,12 @@ const Clients = () => {
             rel="noopener noreferrer"
             className="flex justify-center items-center w-28 sm:w-32 md:w-36 h-24 bg-[var(--logo-background)] rounded-full p-4 shadow-md transition duration-300 ease-in-out hover:scale-105"
           >
-            <img
+            <Image
               src={img}
               alt={name}
               title={name}
-              loading="lazy"
-              width="144"
-              height="64"
+              width={144}
+              height={64}
               className="w-full max-h-16 object-contain transition duration-300 ease-in-out hover:scale-110"
             />
           </a>

@@ -1,5 +1,6 @@
 import { workExperience } from "@/data";
 import React from "react";
+import Image from "next/image";
 import { TechCard } from "./ui/TechCard";
 import { ProfilePixelCard } from "./ProfilePixelCard";
 
@@ -25,13 +26,12 @@ const WorkExperience = () => {
                     <div className="flex flex-col h-full w-full justify-start items-center py-2">
                       {/* Company Logo with optimized alt & dimensions */}
                       <div className="work-content_logo">
-                        <img
+                        <Image
                           src={icon}
                           alt={`${name} logo`}
                           className="w-full"
-                          width="100"
-                          height="100"
-                          loading="lazy"
+                          width={100}
+                          height={100}
                         />
                       </div>
                       <div className="work-content_bar" />

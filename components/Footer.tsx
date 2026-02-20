@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { MagicButton } from "./ui/MagicButton";
 import { socialMedia } from "@/data";
 import { FaLocationArrow } from "react-icons/fa";
@@ -10,7 +11,7 @@ const Footer = () => {
       id="contact"
     >
       <div className="w-full absolute -bottom-80 sm:-bottom-60 left-0 sm:-left-50 sm:inset-x-10 sm:inset-y-auto min-h-96 sm:min-h-0">
-        <img src="/svg/footer-grid.svg" alt="footer-grid" width="500" height="500" />
+        <Image src="/svg/footer-grid.svg" alt="footer-grid" width={500} height={500} />
       </div>
 
       <div className="flex flex-col items-center">
@@ -33,7 +34,7 @@ const Footer = () => {
 
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-      {" "}
+          {" "}
           Copyright &copy; 2025 Amr Hassan Hafez
         </p>
 
@@ -44,7 +45,7 @@ const Footer = () => {
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
             >
               <a href={profile.link}>
-                <img
+                <Image
                   src={profile.img}
                   alt={profile.name}
                   width={20}
